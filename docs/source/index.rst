@@ -138,7 +138,7 @@ In Education Provided by ZetaBank:
     courses/5.fusion_coding/10.issue_analysis/0.index
     courses/5.fusion_coding/11.team_diy/0.index
     courses/5.fusion_coding/12.team_diy_presentation/0.index
-    courses/5.fusion_coding/13.team_project/0.index
+    courses/5.fusion_coding/13.team_diy_system/0.index
 
 .. toctree::
     :caption: Autonomous Driving
