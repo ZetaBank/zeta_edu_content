@@ -151,9 +151,15 @@ In Education Provided by ZetaBank:
     :caption: Problem Solving
     :hidden:
 
+    courses/7.problem_solve/0.intro/0.index
+    courses/line
+
 .. toctree::
     :caption: Cooperation
     :hidden:
+    courses/8.cooperation/0.intro/0.index
+    courses/line
+
     
 .. toctree::
     :caption: Use Cases
