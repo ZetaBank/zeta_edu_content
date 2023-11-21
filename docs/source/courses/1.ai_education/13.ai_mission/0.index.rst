@@ -1,0 +1,109 @@
+AI Mission (AI)
+================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Team Quiz: AI
+        </p>
+        <div class="line-block">
+            <div class="line">This is a AI mission session where each team carries out a mission.</div>
+        </div>
+        <ul>
+            <li>Let's solve the mission by applying AI code.</li>
+            <li>It's time for a team with a high score.</li>
+            <li>There may be rewards for the team that wins the mission.</li>
+        </ul>
+    </div>
+
+.. raw:: html
+
+Missions:
+
+    .. thumbnail:: /_images/ai_mission/image_mission.png
+
+    1. Image recognition mission
+        1. Use different photos
+        2. It recognizes photos that fit each model and announces the photos with the highest sum of ratios.
+        3. There are 10 models in total at the bottom right.
+        4. Create the final page by adding up the percentage of recognized objects
+        5. If multiple objects are recognized, the object with the highest proportion is judged.
+        6. Scoring criteria
+            - A+: Total of 950 or more
+            - A: Total of 900 or more
+            - B+: Total of 850 or more
+            - B: Total of 800 or more
+            - C+: Total of 750 or more
+            - C: Total of 700 or more
+            - D+: Total of 650 or more
+            - D: Total 600 or more
+            - F: rest
+
+    .. thumbnail:: /_images/ai_mission/object_mission.png
+
+    2. Object detection mission
+        1. Use different photos
+        2. Detect objects in photos that fit each model.
+        3. The total number of models is 10 at the bottom right.
+        4. Calculate the total number of detected objects and finally Create a page (if 15 dogs are detected in one photo, it is set as 15)
+        5.  It is based on a square box.
+        6. Scoring criteria
+            - A+: Total 30 or more / A: Total 29~27
+            - B+: Total 26~24 / B: Total 23~21
+            - C+: Total 20~18 / C: Total 17~15
+            - D+: Total 14~12 / D: Total 12~10
+            - F: less than 10
+
+    3. Backgroundnet Mission
+        1. Use your own photos
+        2. Composite photos of team members and background photos of nearby tourist attractions
+        3. Use photos taken with your team members
+        4. Explain the concept, background, and intention of the photo
+        5. Scoring criteria
+            - Team photo + background photo
+            - A+: 20 or more sheets / A: 17 or more sheets
+            - B+: 15 or more sheets / B: 12 or more sheets
+            - C+: 10 or more sheets / C: 7 or more sheets
+            - D+: 5 or more / D: 2 or more
+            - F: rest
+
+    4. Posenet Mission
+        1. Analyzing poses when athletes in the same field perform similar movements
+        2. Identify the characteristics of each player and analyze any differences
+        3. Minimum number of players: 2
+        4. Minimum number of identical action photos: 4
+        5. Scoring criteria
+            - ppt total pages
+            - A+: 15 or higher / A: 13 or higher
+            - B+: 11 or higher / B: 9 or higher
+            - C+: 7 or higher / C: 5 or higher
+            - D+: 3 or more / D: 1 or more
+            - F: less than 1
+        
+    .. thumbnail:: /_images/ai_mission/segmentation_mission.png
+
+    5. Segmentation Mission
+        1. Analysis of use cases for each model of segmentation
+        2. The total number of models is 5 at the bottom right.
+        3. Example photos included for each case
+        4. Written with speculation about how it could be used in the future
+        5. Scoring criteria
+            - ppt total pages
+            - A+: 15 or higher / A: 13 or higher
+            - B+: 11 or higher / B: 9 or higher
+            - C+: 7 or higher / C: 5 or higher
+            - D+: 3 or more / D: 1 or more
+            - F: less than 1
+
+    6. Depthnet Mission
+        1. Collection of classic paintings with good perspective
+        2. Identify the characteristics of each picture and which picture is best applied
+        3. Infer why it was applied best
+        4. Scoring criteria
+            - Number of classical paintings analyzed
+            - A+: 10 or higher / A: 8 or higher
+            - B+: 6 or higher / B: 5 or higher
+            - C+: 4 or higher / C: 3 or higher
+            - D+: 2 or more / D: 1 or more
+            - F: less than 1

@@ -1,0 +1,140 @@
+Team Project
+================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Team Project: Team DIY System
+        </p>
+        <div class="line-block">
+            <div class="line">This is about creating a system including the UI together with your team members..</div>
+        </div>
+        <ul>
+            <li>Let's design the system, including the UI, with team members.</li>
+            <li>It's time to choose one of the topics below and complete your project.</li>
+            <li>Now, let's share our thoughts with our team members!</li>
+        </ul>
+    </div>
+
+.. raw:: html
+
+personal book management system:
+    1. basic features
+        - Register/delete/edit books
+        - Book search function (by title, author, category)
+        - Book loan and return record management
+        - Book reading date and personal rating record
+    2. Additional features
+        - Show book location (which shelf it is on)
+        - Tracking pages read for each book
+        - Create a recommended book list
+
+Household account book management application:
+    1. basic features
+        - Enter income and expenditure details
+        - Monthly/weekly/daily history statistics
+        - Classification and statistics by category
+        - Budget setting and exceedance notification function
+    2. Additional features
+        - Receipt photo attachment and analysis function
+        - Consolidate and analyze economic news to suggest spending patterns
+        - Sync with mobile app
+
+Todo List & Scheduler:
+    1. basic features
+        - Add/edit/delete schedule
+        - Sort by date and time
+        - Schedule completion check function
+        - Set up notifications and reminders
+    2. Additional features
+        - Share your schedule with other users with the sharing feature
+        - Integrates weather information to provide reminders for outdoor schedules
+        - Add schedule via voice command
+
+Recipe management application:
+    1. basic features
+        - Add/Edit/Delete Recipe
+        - Search recipes by ingredient
+        - User ratings and reviews by recipe
+        - Recipe sharing function
+    2. Additional features
+        - Food ingredient inventory management and automatic order linkage
+        - Guide to cooking process through video
+        - Share and rate recipes with other users
+
+Online ordering related system:
+    1. basic features
+        - Add/edit/delete product
+        - Order history management
+        - Change order status (pending, processing, completed)
+        - Customer information and feedback management
+    2. Additional features
+        - Order tracking and real-time location confirmation
+        - Feedback and review system
+        - Favorite product recommendation feature
+
+Movie information and review management application:
+    1. basic features
+        - Register/edit/delete movie information
+        - Write user ratings and reviews
+        - Movie search and filter function
+        - User evaluation ranking and recommendation function
+    2. Additional features
+        - User-based movie recommendation algorithm
+        - Movie trailer and behind-the-scenes clips provided
+
+diary application:
+    1. basic features
+        - Create/edit/delete diary
+        - View diary by date in conjunction with calendar function
+        - Manage photos and other attachments
+        - Search your diary by specific words or dates
+    2. Additional features
+        - Provides mood statistics through emotion analysis
+        - Link and play specific music to your diary
+
+puzzle game:
+    1. basic features
+        - Provides multiple levels of puzzles
+        - Drag and drop puzzle pieces
+        - Save and load games
+        - Record high scores and rankings
+    2. Additional features
+        - Create a puzzle from your own image
+        - Online multiplayer mode
+
+memory card match game:
+    1. basic features
+        - Provides card flipping animation
+        - Check matches for each card pair
+        - Customize the game by adding your own images
+    2. Additional features
+        - Various game difficulty settings (change number of cards, etc.)
+        - Game sounds and background music
+        - Option to change card back design
+        - Online ranking system integration
+
+simple quiz game:
+    1. basic features
+        - Display the correct answer among various options
+        - Display correct/incorrect answers based on selected answer
+        - Score calculated as the game progresses
+        - Add and manage user quizzes
+    2. Additional features
+        - Multiplayer mode (online quiz competition)
+        - Category classification by quiz field
+        - Option to provide quiz commentary
+        - User Statistics and Grades Board
+
+sudoku game:
+    1. basic features
+        - Enter numbers in a 9x9 grid
+        - Check the accuracy of numbers in real time
+        - Game over notification when puzzle is completed
+        - Various difficulty settings
+    2. Additional features
+        - Hint provision function
+        - Share user-created Sudoku puzzles
+        - Save and load mid-game
+        - Change game background and theme

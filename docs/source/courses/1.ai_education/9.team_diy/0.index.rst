@@ -1,0 +1,76 @@
+Team DIY AI
+================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Team DIY AI: Create Your AI
+        </p>
+        <div class="line-block">
+            <div class="line">This is about creating AI with your team members.</div>
+        </div>
+        <ul>
+            <li>Let's create AI freely with team members.</li>
+            <li>It's a time to reflect on the thoughts of the team members and your own thoughts.</li>
+            <li>Now, let's share our thoughts with our team members!</li>
+        </ul>
+    </div>
+
+.. raw:: html
+
+Create a team AI
+----------------
+1. Go outside and collect various photos of your surroundings
+2. Using a robot to perform an AI program based on various photos
+3. Derive results based on each model and various parameter modification results
+4. Input and output are all included in the presentation material
+5. Present the photos each person took
+6. The report evaluation criteria are as follows:
+    - A+ : Write at least 30 photos
+    - A : Write at least 25 photos
+    - B+: Write at least 20 photos
+
+|
+
+Transfer the photos you took to the robot
+----------------
+How to transfer your own photos to a robot
+1. Move the photos you took to your laptop or PC.
+2. Connect the robot to Wi-Fi.
+3. Open cmd and go to the path where your photo is located.
+4. In the case of example
+    - ``C:\Users\zetabank\Desktop\Hustar\AI lecture material\photos``
+    .. thumbnail:: /_images/ai_diy/ai_diy_1.png
+    - It is located on the path called.
+5. You can check currently existing photos by entering the dir command.
+    .. thumbnail:: /_images/ai_diy/ai_diy_2.png
+6. Send photos using robot and communication commands
+    - ``scp zeta@10.42.0.1:/home/zeta/jetson-inference/data/images``
+    - When using the command, all files located in the current folder are copied
+    - ``scp chair.jpg zeta@10.42.0.1:/home/zeta/jetson-inference/data/images``
+    - Only specific photos can be sent separately
+    - When prompted to enter a password, enter 1 and click Enter.
+
+|
+
+Running an AI program on a photo robot
+----------------
+.. thumbnail:: /_images/ai_diy/ai_diy_3.png
+.. thumbnail:: /_images/ai_diy/ai_diy_4.png
+1. There is an input_path where the photo I sent is located.
+2. There is output_path as a result of the program I ran.
+3. As a result, the file location of the run program is becomes ``/home/zeta/jetson-inference/data/images/test.``
+4. By modifying output_name in the above program, you can set the name of the result you want (in the case above, set it to detect_result.jpg, but only in English)
+
+|
+
+Import AI result photos to PC
+----------------
+.. thumbnail:: /_images/ai_diy/ai_diy_5.png
+1. We knew the path to the photo on the previous page.
+2. In cmd ``scp zeta@10.42.0.1:/home/zeta/jetson-inference/data/images/test/detect_result.jpg .'``
+3. When using the command, the file detect_result.jpg is copied and imported into the currently located folder.
+4. ``scp zeta@10.42.0.1:/home/zeta/jetson-inference/data/images/test/* .`` When using the above command, all results so far are brought to the currently located folder.
+5. Password is also 1.
+6. According to the above results, all result photos are imported to the path ``C:\Users\zetabank\Desktop\Hustar\AI Lecture Materials\photos``.
