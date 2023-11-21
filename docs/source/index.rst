@@ -100,7 +100,7 @@ In Education Provided by ZetaBank:
     :caption: Robot Arm Control
     :hidden:
 
-    courses/1.ai_education/0.intro/0.index
+    courses/3.robot_arm/0.intro/0.index
     courses/line
     courses/3.robot_arm/1.robot_arm_basic/0.index
     courses/3.robot_arm/2.robot_arm_1/0.index
