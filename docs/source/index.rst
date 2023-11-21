@@ -157,6 +157,7 @@ In Education Provided by ZetaBank:
 .. toctree::
     :caption: Cooperation
     :hidden:
+    
     courses/8.cooperation/0.intro/0.index
     courses/line
 
