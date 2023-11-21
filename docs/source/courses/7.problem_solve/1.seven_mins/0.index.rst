@@ -1,0 +1,59 @@
+7 Minute Problem
+===================
+
+Write complete code for each problem in 7 minutes
+
+1. Write a Python script that receives an integer as input from the user, calculates the square of that number, and outputs it.
+
+2. Write a Python script that receives an integer from the user using input() and repeatedly outputs that number as many times as the number. At this time, add a space in front of the output to distinguish between input and output.
+
+3. Write a program that takes an integer as input, calculates the square of each input number from 1, and prints it.
+
+4. There is a compound interest calculation that can be applied in real life. Assuming you invest at an interest rate of 10% per year, you can see how much your initial investment increases each year.
+
+5. Skydiving training with height restrictions Let's say a person is learning to skydive. This person practices diving using a simulator at a height of 100 meters. Skydiving simulators reduce the height by 3/5 times after each jump. If you practice in this way, you can write a program to calculate how high you fall on each jump.
+
+6. Let’s imagine. I'm playing some game with my friends. The rule of the game is to say the last 3 to 4 digits of each person's phone number upside down. It's a game to see who can say the correct number the fastest. Here we will implement the rule in Python code.
+
+7. Write a program that uses input() to print the numbers entered by the user in Korean. However, it is assumed that the user enters an integer between 1 and 3.
+
+8. I run a small restaurant and want to create a digital menu. When a customer selects a food from the menu, the name of that food is displayed on the screen. You can simply implement this with Python code.
+
+9. After inputting the user's age using input(), print which generation the user belongs to in the following table. You can freely create input/output phrases.
+
++----------------------+------------------------+
+| Birth Year Range     | Generation             |
++======================+========================+
+| ~1924                 | The Greatest Generation|
++----------------------+------------------------+
+| 1925~1945             | The Silent Generation  |
++----------------------+------------------------+
+| 1946~1964             | Baby Boomer            |
++----------------------+------------------------+
+| 1965~1980             | Generation X           |
++----------------------+------------------------+
+| 1981~1996             | Millennial             |
++----------------------+------------------------+
+| 1997~                 | Generation Z           |
++----------------------+------------------------+
+
+10. Online Theme Party Invitations
+Let's imagine. Due to COVID-19, all gatherings and parties are being held online. Let's say you're hosting a "generational themed party" that can involve people from multiple generations. When participants enter the year they were born, it tells them which generation they belong to and recommends music, movies, and fashion styles representative of that generation.
+
+11. When expressing length, volume, weight or amount, 1000 is often written as ‘k’. For example, 3000m is usually written as 3km. Next, if the input number is greater than 1000, write a code that omits the numbers from digits 1 to 100 and adds ‘k’.
+
+12. You are developing a running app. To make it easier for users to check the distance they have run, we would like to add a function that displays it in 'km' units if they have run more than 1000m. You can try using Python code for this.
+
+13. In Korea, people born between 1955 and 1963 are usually considered the ‘baby boom generation.’ Create a program that can classify generations based on whether the user is Korean.
+
+.. thumbnail:: /_images/etc/ETA.png
+
+
+14. Characteristics and implications of each generation through famous scenes of Korean history
+We will create a program that informs the characteristics of each generation according to Korean history and culture. When a user enters the year they were born, write code that tells you what historical events or culture occurred in that generation and what implications they have for the present.
+
+15. Automatic chemical monitoring system
+This program automatically monitors temperatures as chemists prepare wound care medications. It measures the temperature every 15 seconds and sends a notification if the temperature is too high or too low.
+
+16. Smart flowerpot management system
+This program automatically monitors the moisture status of indoor plants. Every 15 seconds, a moisture sensor measures the moisture status of the pot and sends a notification to automatically water as needed.

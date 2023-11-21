@@ -85,7 +85,6 @@ In Education Provided by ZetaBank:
     courses/1.ai_education/12.mid_test/0.index
     courses/1.ai_education/13.ai_mission/0.index
 
-
 .. toctree:: 
     :caption: Robot Control
     :hidden:
@@ -94,7 +93,11 @@ In Education Provided by ZetaBank:
     courses/line
     courses/2.robot_control/1.ros_python_1/0.index
     courses/2.robot_control/2.ros_python_2/0.index
-
+    courses/2.robot_control/3.ros_1/0.index
+    courses/2.robot_control/4.ros_2/0.index
+    courses/2.robot_control/5.ros_3/0.index
+    courses/2.robot_control/6.ros_4/0.index
+    courses/2.robot_control/7.ros_5/0.index
 
 .. toctree:: 
     :caption: Robot Arm Control
@@ -153,11 +156,13 @@ In Education Provided by ZetaBank:
 
     courses/7.problem_solve/0.intro/0.index
     courses/line
+    courses/7.problem_solve/1.seven_mins/0.index
+
 
 .. toctree::
     :caption: Cooperation
     :hidden:
-    
+
     courses/8.cooperation/0.intro/0.index
     courses/line
 
