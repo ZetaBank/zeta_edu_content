@@ -168,5 +168,9 @@ In Education Provided by ZetaBank:
 
     
 .. toctree::
-    :caption: Use Cases
+    :caption: Application Cases
     :hidden:
+
+    courses/9.use_cases/1.case_1/0.index
+
+

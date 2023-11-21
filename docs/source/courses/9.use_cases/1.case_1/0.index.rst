@@ -1,0 +1,26 @@
+Use Cases
+===================
+
+.. thumbnail:: /_images/model/model_1.jpg
+
+Zetabank Model-D
+-------------------
+`https://manual-model-d.readthedocs.io/en/latest/`_
+
+Model-D for Disinfection
+
+|
+
+Zetabank Model-C
+-------------------
+`https://manual-model-c.readthedocs.io/en/latest/`_
+
+Model-C for Untact Service
+
+.. thumbnail:: /_images/model/model_2.jpg
+
+Zetabank Model-I
+-------------------
+`https://manual-model-i.readthedocs.io/en/latest/`_
+
+Model-I for Ultimate Disinfection

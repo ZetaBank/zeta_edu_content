@@ -24,17 +24,17 @@ Write complete code for each problem in 7 minutes
 +----------------------+------------------------+
 | Birth Year Range     | Generation             |
 +======================+========================+
-| ~1924                 | The Greatest Generation|
+| ~1924                | The Greatest Generation|
 +----------------------+------------------------+
-| 1925~1945             | The Silent Generation  |
+| 1925~1945            | The Silent Generation  |
 +----------------------+------------------------+
-| 1946~1964             | Baby Boomer            |
+| 1946~1964            | Baby Boomer            |
 +----------------------+------------------------+
-| 1965~1980             | Generation X           |
+| 1965~1980            | Generation X           |
 +----------------------+------------------------+
-| 1981~1996             | Millennial             |
+| 1981~1996            | Millennial             |
 +----------------------+------------------------+
-| 1997~                 | Generation Z           |
+| 1997~                | Generation Z           |
 +----------------------+------------------------+
 
 10. Online Theme Party Invitations
