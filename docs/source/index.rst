@@ -149,8 +149,8 @@ In Education Provided by ZetaBank:
 
     courses/6.autonomous_driving/0.intro/0.index
     courses/line
-    courses/6.autonomous_driving/1.robot_driving_ros/0.index
-    courses/6.autonomous_driving/2.slam_navigation/0.index
+    courses/6.autonomous_driving/1.robot_driving_ros/1.index
+    courses/6.autonomous_driving/2.slam_navigation/1.index
 
 .. toctree::
     :caption: Problem Solving
