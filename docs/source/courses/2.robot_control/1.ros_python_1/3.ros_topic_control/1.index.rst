@@ -10,3 +10,4 @@ Here are the contents:
 
     1.follow_along/1.index
     2.explanation/1.index
+    3.mission/1.index

@@ -1,0 +1,147 @@
+Team Mission - ROS Topic
+=========
+
+.. raw:: html
+
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Project Name: Forward Message
+        </p>
+        <div class="line-block">
+            <div class="line"><strong>-</strong> This mission is an <strong>team project</strong></div>
+            <div class="line"><strong>-</strong> Message transmission using ROS publisher and subscriber.</div>
+            <div class="line"><strong>-</strong> Send and receive messages you want to send to team members. </div>
+        </div>
+    </div>
+
+.. raw:: html
+
+Let's take integer data and find the sum.
+-----------------------
+
+1. Let's apply ROS Publisher and Subscriber.
+
+2. Publisher takes integer input from the user and publishes it as a message.
+
+3. Subscriber outputs the sum of the received integers.
+
+4. Hint!
+
+.. code-block:: python
+
+    user_input = int(input("Enter an integer: "))
+    rospy.loginfo("Published: %d", user_input)
+    pub.publish(user_input)
+
+.. code-block:: python
+    global total
+    user_input = data.data
+    total += user_input
+    rospy.loginfo("Received: %d | Total: %d", user_input, total)
+
+|
+
+Let's chat by sending a string.
+-----------------------
+
+1. Let's apply ROS Publisher and Subscriber.
+
+2. Publisher receives the user's string and publishes it as a message.
+
+3. Subscriber outputs the received string.
+
+4. Hint!
+
+.. code-block:: python
+
+    user_input = input("Enter a string: ")
+    rospy.loginfo("Published: %s", user_input)
+    pub.publish(user_input)
+
+.. code-block:: python
+
+    received_char = data.data
+    rospy.loginfo("Received: %s", received_char)
+
+|
+
+Let's separate the string and send it.
+-----------------------
+
+1. Let's apply ROS Publisher and Subscriber.
+
+2. Publisher receives the user's string, divides it into characters and publishes it.
+
+3. Subscriber outputs the received text.
+
+4. Hint!
+
+.. code-block:: python
+
+    user_input = input("Enter a string: ")
+    for char in user_input:
+	    rospy.loginfo("Published: %s", char)
+        pub.publish(char)
+
+.. code-block:: python
+
+    received_string = data.data
+    rospy.loginfo("Received: %s", received_string)
+
+|
+
+Let's re-deliver the received message.
+-----------------------
+
+1. Let's apply ROS Publisher and Subscriber.
+
+2. Publisher1 sends the user's string to Subscriber2, and Subscriber2 prints the received message and transmits it to Publisher2.
+
+3. Publisher2 transmits the received string to Subscriber1.
+
+4. Hint!
+
+.. code-block:: python
+
+    def callback1(data):
+	    rospy.loginfo("Received from Publisher2: %s", data.data)
+	    pub1.publish(data.data) 
+
+.. code-block:: python
+
+    def callback2(data):
+    rospy.loginfo("Received from Publisher1: %s", data.data)
+    pub2.publish(data.data)
+
+|
+
+Let's reverse the received message and re-send it (ex. Hello -> olleH)
+-----------------------
+
+1. Let's apply ROS Publisher and Subscriber.
+
+2. Publisher1 transmits the user's string to Subscriber2, and Subscriber2 reverses the received message, prints it, and transmits it to Publisher2.
+
+3. Publisher2 transmits the received string to Subscriber1.
+
+4. Hint!
+
+.. code-block:: python
+
+    def callback1(data):
+	    rospy.loginfo("Received from 	Publisher2: %s", data.data)
+	    pub1.publish(data) 
+
+.. code-block:: python
+
+    def callback2(data):
+        received_message = data.data
+        reversed_message = received_message[::-1] 
+        rospy.loginfo("Received from Publisher1: %s", reversed_message)
+        pub2.publish(reversed_message)
+
+|
+
+
+
+
