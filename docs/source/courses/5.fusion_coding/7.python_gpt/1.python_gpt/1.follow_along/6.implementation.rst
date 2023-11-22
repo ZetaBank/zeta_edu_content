@@ -1,0 +1,31 @@
+Request Function Implementation
+======================
+
+- Let's write a simple game, such as buying lunch, in Python with ChatGPT. ex)climbing a ladder
+
+- Code interpretation of ChatGPT
+
+    .. code-block:: python
+        
+        import random
+
+        def ladder_game():
+            participants = input("참가자 이름을 쉼표로 구분하여 입력하세요: ").split(',')
+            
+            # 공백 제거
+            participants = [name.strip() for name in participants]
+            
+            # 랜덤하게 선택
+            winner = random.choice(participants)
+            
+            print(f"{winner}님이 점심을 사게 되었습니다!")
+
+        if __name__ == "__main__":
+            print("점심 사다리 게임을 시작합니다.")
+            ladder_game()
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-Python OpenCV Library
+Python NumPy Library
 ================
 
 
@@ -6,7 +6,6 @@ Here are the contents for this section:
 
 .. toctree:: 
 
-    1.numpy/1.explanation/0.index
-    1.numpy/2.follow_along/0.index
+    1.python_gpt/1.follow_along/0.index
     2.discussion
     3.qa

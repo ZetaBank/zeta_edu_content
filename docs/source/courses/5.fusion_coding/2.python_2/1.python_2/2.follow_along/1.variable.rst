@@ -21,44 +21,408 @@ Variables
 
 .. raw:: html
 
-- Specifies variables of various types.
+- Let's write the following examples.
+
+Numeric Variables
+----------------------
 
 .. code-block:: python
     
-    # Integer Variable
-    age = 25
+    # 1
+    a = 10
+    b = 20
+    c = a + b
+    print(c)
+    print(type(c)) 
 
-    # Floating-Point Variable
-    height = 5.9
-
-    # String Variable
-    name = "John"
-
-    # Boolean Variable
-    is_student = True
-
-    # List Variable (a collection of values)
-    fruits = ["apple", "banana", "orange"]
-
-    # Tuple Variable (similar to a list but immutable)
-    coordinates = (10, 20)
-
-    # Dictionary Variable (key-value pairs)
-    person = {"name": "Alice", "age": 30, "is_student": False}
-
-    # Set Variable (a collection of unique values)
-    grades = {90, 85, 78, 92}
-
-- Print out the various variables created.
 
 .. code-block:: python
 
-    # Outputting the Values
-    print("Integer Variable:", age)
-    print("Floating-Point Variable:", height)
-    print("String Variable:", name)
-    print("Boolean Variable:", is_student)
-    print("List Variable:", fruits)
-    print("Tuple Variable:", coordinates)
-    print("Dictionary Variable:", person)
-    print("Set Variable:", grades)
+    # 2
+    x = 3.3764
+    y = 6/2
+    print(x, y)
+    print(type(x), type(y))
+
+
+.. code-block:: python
+
+    # 3
+    a = 10
+    b = 20
+    c = a + b * 10 -5 / 5
+    print(c)	
+
+.. code-block:: python
+
+    # 4
+    x = 10
+    x += 20     # x = x + 20 과 동일
+    print(x)	
+
+
+.. code-block:: python
+
+    # 5
+    a = input('첫번째 숫자를 입력하세요: ')
+    b = input('두번째 숫자를 입력하세요: ')
+    c = int(a) + int(b)
+    print(c)	
+
+
+.. code-block:: python
+
+    # 6
+    x = 3
+    y = 5
+    x *= x + y      # x = x * (x + y) 과 동일
+    print(x)	
+
+
+String Variables
+----------------------
+
+.. code-block:: python
+
+    # 1
+    a = 'x'
+    b = 'I am ok.'
+    c = "안녕하세요."
+
+    print(a)
+    print(b)
+    print(c)
+    print(type(c))	
+
+
+.. code-block:: python
+
+    # 2
+    x = 'I am happy!'
+    print(x)
+    print(x[0])
+    print(x[0:3])
+    print(x[5:])
+    print(x[-1])
+    print(x[-3:])
+    print(x[-4:-2])	
+
+
+.. code-block:: python
+
+    # 3
+    a = True
+    b = False
+    print(a)
+    print(b)
+    c = 10 > 20
+    print(c)
+    print(type(a))
+
+
+.. code-block:: python
+
+    # 4
+    name = '홍지수'
+    greet = name + '님 안녕하세요!'
+    print(greet)	
+
+
+.. code-block:: python
+
+    # TypeError
+    eng = 100
+    result = '파이썬 점수: ' + eng + '점'
+    print(result)
+
+
+.. code-block:: python
+
+    # 5
+    hello = '안녕' * 5
+    print(hello)
+
+
+.. code-block:: python
+
+    # 6
+    a = '쥐 구멍에 볕 들 날 있다.'
+    b = len(a)
+    print(b)
+
+
+.. code-block:: python
+
+    # 7
+    name = '김수영'
+    a = '나는%s입니다.' % name
+    print(a)
+
+
+.. code-block:: python
+
+    # 8
+    name = '홍길동'
+    age = 30
+    height = 173.7
+    print(name, age, height)
+
+.. code-block:: python
+
+    # 9
+    year = 2020
+    month = 3
+    day = 5
+    print(year, month, day, sep='/')
+
+
+.. code-block:: python
+
+    # 10
+    x = 10
+    y = 20
+    print('x = ' + str(x) + ', y = ' + str(y))
+
+.. code-block:: python
+
+    # 11
+    life = 'too\nshort'
+    print(life)
+
+List Variables
+----------------------
+
+.. code-block:: python
+
+    # 1
+    a = [1, 2, 3]
+
+    print(a)
+    print(a[0])
+    print(a[0] + a[2])
+    print(a[0] + a[-1])
+    print(a[1] * 2)
+
+
+.. code-block:: python
+
+    # 2
+    b = [1, 2, 3, ['a', 'b', 'c']]
+        
+    print(b)
+    print(b[0])
+    print(b[3])
+    print(b[3][0])
+    print(b[3][0:2])
+
+
+.. code-block:: python
+
+    # 3
+    c = [1, 2, 3, 4, 5]
+        
+    print(c)
+    print(c[0])
+    print(c[0:2])
+    print(c[2:4])
+    print(c[4:5])
+    print(c[0:5])
+
+
+.. code-block:: python
+
+    # 4
+    d = [1, 2, 3, 4, 5, 6]
+        
+    d1 = d[:3]
+    print("d1 :", d1)
+    d2 = d[3:]
+    print("d2 :", d2)
+    d3 = d1 + d2
+    print("d3 :", d3)
+
+
+.. code-block:: python
+
+    # 1
+    a = ['b', 'y', 'e']
+
+    print(a)
+    print(a * 3)
+
+
+.. code-block:: python
+
+    # 2
+    b = ['b', 'y', 'e']
+    print(b)
+
+    print('b[0]:', b[0])
+    b[0] = 'B'
+
+    print(b)
+
+
+.. code-block:: python
+
+    # 3
+    c = ['h', 'e', 'o']
+    print(c)
+
+    print('c[1:2]:', c[1:2])
+    c[1:2] = ['e', 'l', 'l']
+
+    print(c)
+
+
+.. code-block:: python
+
+    # 4
+    d = [1, 2, 3, ['a', 'b', 'c'], 4, 5]
+
+    print(d)
+    print(d[2:5])
+    print([d[3][:2]])
+
+
+.. code-block:: python
+
+    # 1
+    a = [82, 43, 92, 66, 1]
+
+    a.sort()
+    print(a)
+
+    a.reverse()
+    print(a)
+
+
+.. code-block:: python
+
+    # 2
+    b = ['nice', 'to', 'meet']
+    print(b)
+
+    b.append('you')
+    print(b)
+
+
+.. code-block:: python
+
+    # 3
+    c = ["see", "again"]
+    print(c)
+
+    c.insert(1, "you")
+    print(c)
+
+
+.. code-block:: python
+
+    # 4
+    d = ["time", "to", "say", "goodbye"]
+    print(d)
+
+    del d[3]
+    print(d)
+
+
+Tuple Variables
+----------------------
+
+.. code-block:: python
+
+    # 1
+    a = ('R', 'E', 'D', 'R', 'U', 'M')
+    print(a)
+
+
+.. code-block:: python
+
+    # TypeError
+    b = ('R', 'E', 'D', 'R', 'U', 'M')
+    b[0] = 'B'
+
+    print(b)
+
+
+.. code-block:: python
+
+    # TypeError
+    c = ('R', 'E', 'D', 'R', 'U', 'M')
+    del c[0]
+
+    print(c)
+
+
+.. code-block:: python
+
+    # TypeError
+    d1 = ('R', 'E', 'D', 'R', 'U', 'M')
+    d2 = ['r', 'e', 'd', 'r', 'u', 'm']
+
+    d = d1 + d2
+    print(d)
+
+
+Dictionary Variables
+----------------------
+
+.. code-block:: python
+
+    a = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+    print(a.keys())
+
+    for k in a.keys():
+        print(k)
+
+    list(a.keys())
+
+    print(a)
+
+    print(a.values())
+    print(a.items())
+
+    a.clear()
+    print(a)
+
+    a = {'name': 'pey', 'phone': '010-9999-1234', 'birth': '1118'}
+    print(a.get('name'))
+
+    print(a.get('phone'))
+
+    a = {'name':'pey', 'phone':'010-9999-1234', 'birth': '1118'}
+    print('name' in a)
+
+
+Set Variables
+----------------------
+
+.. code-block:: python
+
+    s1 = set([1, 2, 3])
+    print(s1)
+
+    s2 = set("Hello")
+    print(s2)
+
+    s1 = set([1, 2, 3, 4, 5, 6])
+    s2 = set([4, 5, 6, 7, 8, 9])
+    print(s1 & s2)
+    print(s1.intersection(s2))
+    print(s1 - s2)
+    print(s2-s1)
+    print(s1.difference(s2))
+    print(s2.difference(s1))
+
+
+Bool Variables
+----------------------
+
+.. code-block:: python
+
+    a = [1, 2, 3, 4]
+    while a:
+        print(a.pop())
+
+

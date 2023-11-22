@@ -1,8 +1,5 @@
-PyQT - Ⅰ
+Introduction to PyQT
 ===========
-
-Introduction and Environment Setup
-------------------------------------
 
 Here are the contents for this section:
 

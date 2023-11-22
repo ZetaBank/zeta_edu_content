@@ -1,0 +1,27 @@
+Determine the Cause of the Error
+======================
+
+.. code-block:: python
+
+    money = True
+    if money:
+        print("택시를")
+    print("타고")
+        print("가라")
+
+
+- If an error occurs while writing code and it is difficult to determine the cause, ask ChatGPT.
+
+- Code interpretation of ChatGPT
+
+    - The code you provided contains an indentation error. Indentation in Python is important for defining which blocks of code belong to a particular statement (such as an if statement). The correct code should be:
+
+    .. code-block:: python
+
+        money = True
+        if money:
+            print("Taxi")
+            print("Ride")
+            print("Go")
+
+    - In this modified code, if the money variable is True, “Taxi”, “Ride”, and “Go” are output.

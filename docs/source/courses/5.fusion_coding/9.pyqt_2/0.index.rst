@@ -1,8 +1,5 @@
-PyQT - Ⅱ
+Widgets and User Interaction
 ================
-
-Basic Widgets and User Interaction
------------------------------------
 
 Here are the contents for this section:
 

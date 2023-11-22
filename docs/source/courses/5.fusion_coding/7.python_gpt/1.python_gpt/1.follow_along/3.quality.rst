@@ -1,0 +1,41 @@
+Improve the Quality of Code
+======================
+
+.. code-block:: python
+
+    f1 = open("test.txt", 'w')
+    f1.write("Life is too short!")
+    f1.close()
+
+    f2 = open("test.txt", 'r')
+    print(f2.read())
+    f2.close()
+
+
+- Can we write better quality code than this one?
+
+- Code interpretation of ChatGPT
+
+    .. code-block:: python
+
+        def write_to_file(filename, content):
+            with open(filename, 'w') as f:
+                f.write(content)
+
+        def read_from_file(filename):
+            with open(filename, 'r') as f:
+                return f.read()
+
+        if __name__ == "__main__":
+            write_to_file("test.txt", "Life is too short!")
+            print(read_from_file("test.txt"))
+
+
+    .. code-block:: python
+
+        with open("test.txt", 'w') as f:
+            f.write("Life is too short!")
+
+        with open("test.txt", 'r') as f:
+            print(f.read())
+

@@ -1,8 +1,7 @@
-PyQT - Ⅳ
+Interaction and Communication
 ================
 
-Interaction and Communication
-------------------------------
+Here are the contents for this section:
 
 .. toctree:: 
 

@@ -1,0 +1,14 @@
+Follow Along!
+================
+
+
+Here are the contents for this section:
+
+.. toctree:: 
+
+    1.error
+    2.check
+    3.quality
+    4.comment
+    5.interpretation
+    6.implementation

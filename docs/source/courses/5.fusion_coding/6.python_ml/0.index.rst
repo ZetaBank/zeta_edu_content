@@ -1,4 +1,4 @@
-Python OpenCV Library
+NumPy and OpenCV Fusion Application
 ================
 
 
@@ -6,7 +6,7 @@ Here are the contents for this section:
 
 .. toctree:: 
 
-    1.numpy/1.explanation/0.index
-    1.numpy/2.follow_along/0.index
+    1.ml/1.explanation/0.index
+    1.ml/2.follow_along/0.index
     2.discussion
     3.qa

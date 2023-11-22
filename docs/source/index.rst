@@ -131,20 +131,21 @@ In Education Provided by ZetaBank:
     courses/line
     courses/5.fusion_coding/1.python_1/0.index
     courses/5.fusion_coding/2.python_2/0.index
-    courses/5.fusion_coding/3.python_3/0.index
     courses/5.fusion_coding/3.python_numpy/0.index
     courses/5.fusion_coding/4.python_opencv/0.index
     courses/5.fusion_coding/5.python_nno/0.index
+    courses/5.fusion_coding/6.python_ml/0.index
+    courses/5.fusion_coding/7.python_gpt/0.index
     courses/line
-    courses/5.fusion_coding/5.pyqt_1/0.index
-    courses/5.fusion_coding/6.pyqt_2/0.index
-    courses/5.fusion_coding/7.pyqt_3/0.index
-    courses/5.fusion_coding/8.pyqt_4/0.index
-    courses/5.fusion_coding/9.pyqt_5/0.index
-    courses/5.fusion_coding/10.issue_analysis/0.index
-    courses/5.fusion_coding/11.team_diy/0.index
-    courses/5.fusion_coding/12.team_diy_presentation/0.index
-    courses/5.fusion_coding/13.team_diy_system/0.index
+    courses/5.fusion_coding/8.pyqt_1/0.index
+    courses/5.fusion_coding/9.pyqt_2/0.index
+    courses/5.fusion_coding/10.pyqt_3/0.index
+    courses/5.fusion_coding/11.pyqt_4/0.index
+    courses/5.fusion_coding/12.pyqt_5/0.index
+    courses/5.fusion_coding/13.issue_analysis/0.index
+    courses/5.fusion_coding/14.team_diy/0.index
+    courses/5.fusion_coding/15.team_diy_presentation/0.index
+    courses/5.fusion_coding/16.team_diy_system/0.index
 
 .. toctree::
     :caption: Autonomous Driving

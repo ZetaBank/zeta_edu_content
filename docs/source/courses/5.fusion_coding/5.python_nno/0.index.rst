@@ -1,4 +1,4 @@
-NumPy and OpenCV mixed application
+Machine Learning and Data Analytics
 ================
 
 

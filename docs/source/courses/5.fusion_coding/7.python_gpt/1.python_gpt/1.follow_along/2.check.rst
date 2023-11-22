@@ -1,0 +1,29 @@
+Check Code
+======================
+
+.. code-block:: python
+
+    input1 = input("첫번째 숫자를 입력하세요:")
+    input2 = input("두번째 숫자를 입력하세요:")
+
+    total = input1 + input2
+    print("두 수의 합은 %s 입니다" % total)
+
+
+- To check if there are errors in the code you wrote, ask ChatGPT as follows.
+
+- Code interpretation of ChatGPT
+
+    .. code-block:: python
+
+        input1 = input("첫번째 숫자를 입력하세요:")
+        input2 = input("두번째 숫자를 입력하세요:")
+
+        # 문자열을 정수로 변환
+        input1 = int(input1)
+        input2 = int(input2)
+
+        # 두 정수의 합을 계산
+        total = input1 + input2
+
+        print("두 수의 합은 %d 입니다" % total)

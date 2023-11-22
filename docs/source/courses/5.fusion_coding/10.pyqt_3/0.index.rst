@@ -1,8 +1,7 @@
-PyQT - Ⅲ
+Advanced Widgets and Interaction
 ===========
 
-Advanced Widgets and Interaction
-----------------------------------
+Here are the contents for this section:
 
 .. toctree:: 
 

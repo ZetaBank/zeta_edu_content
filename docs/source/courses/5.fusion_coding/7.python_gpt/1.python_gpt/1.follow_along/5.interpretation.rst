@@ -1,0 +1,31 @@
+Request Interpretation of Code
+======================
+
+.. code-block:: python
+
+    import re
+
+    p = re.compile("a[.]{3,}b")
+
+
+- Let's ask ChatGPT to interpret the above code.
+
+- Code interpretation of ChatGPT
+
+    - This code finds a string that starts with the letter 'a', ends with the letter 'b', and has three or more dots ('.') in between.
+
+    - ex:
+    .. code-block:: python
+        
+        "a...b" (O)
+        "a.....b" (O)
+        "a..b" (X)
+        "ab" (X)
+
+
+    - Here's the code to find these patterns.
+
+
+
+
+
