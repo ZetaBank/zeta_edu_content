@@ -1,0 +1,43 @@
+Open image file
+======================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Follow along: Open image file
+        </p>
+        <div class="line-block">
+            <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
+        </div>
+        <ul>
+            <li>Create a new *.ipynb file Jupyter Notebook</li>
+            <li>Fill in the content below in the newly created file</li>
+            <li>Follow and Execute the example codes</li>
+        </ul>
+        <div class="line">(The Jetson Board used for these examples are => Jetson Nano)</div>
+        
+    </div>
+
+.. raw:: html
+
+- 1.open.py
+
+.. code-block:: python
+
+    import cv2
+
+    image = cv2.imread('image.jpg')
+    cv2.imshow('Image', image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+
+- code progress
+
+    1. Read the 'image.jpg' file and save it as an image object.
+    2. Display the image in a new window with the title 'Image'.
+    3. Keep the screen on until the user presses any key on the keyboard.
+    4. Close all OpenCV windows when keyboard input is received
+
+.. thumbnail:: /_images/opencv/opencv_1.png

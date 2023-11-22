@@ -1,0 +1,50 @@
+Rotate Image Files
+======================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Follow along: Rotate Image Files
+        </p>
+        <div class="line-block">
+            <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
+        </div>
+        <ul>
+            <li>Create a new *.ipynb file Jupyter Notebook</li>
+            <li>Fill in the content below in the newly created file</li>
+            <li>Follow and Execute the example codes</li>
+        </ul>
+        <div class="line">(The Jetson Board used for these examples are => Jetson Nano)</div>
+        
+    </div>
+
+.. raw:: html
+
+- 3.rotate.py
+
+.. code-block:: python
+
+    import cv2
+
+    image = cv2.imread('image.jpg')
+    rows, cols = image.shape[:2]
+    rotation_matrix = cv2.getRotationMatrix2D((cols / 2, rows / 2), 180, 1)
+    rotated_image = cv2.warpAffine(image, rotation_matrix, (cols, rows))
+    cv2.imshow('Rotated Image', rotated_image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+
+- code progress
+
+    1. Read the 'image.jpg' file and save it as an image object.
+    2. Save the height and width of the image in rows and cols variables.
+    3. Create a rotation transformation matrix to rotate the image.
+    4. Set the rotation center point, rotation angle, and size scale to the matrix.
+    5. Rotate an image using a rotation transformation matrix and save it to a new image object.
+    6. Display the image in a new window with the title 'Rotated Image'.
+    7. Keep the screen on until the user presses any key on the keyboard.
+    8. Close all OpenCV windows when keyboard input is received.
+
+.. thumbnail:: /_images/opencv/opencv_3.png

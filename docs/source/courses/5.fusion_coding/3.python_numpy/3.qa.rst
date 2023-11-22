@@ -1,0 +1,21 @@
+Q&A session
+=============
+
+
+.. raw:: html
+
+    <div style="background: #CFFDE1" class="admonition note custom">
+        <p style="background: #68B984" class="admonition-title">
+            Question and Answer Session
+        </p>
+        Do you have any questions for the lecturer. This may include questions that arose during the discussion points, or questions that you have. 
+        
+        Sample Questions:
+        <ul>
+            <li>How can NumPy be effectively utilized to optimize the performance of numerical computing tasks?</li>
+            <li>Can you share practical examples where broadcasting in NumPy has simplified array operations?</li>
+            <li>What experiences or challenges have you faced when working with advanced indexing techniques in NumPy?</li>
+            <li>In what ways does NumPy play a crucial role in data science workflows and machine learning applications?</li>
+            <li>Are there specific scenarios where parallelizing numerical computations with NumPy has proven to be particularly beneficial?</li>
+        </ul>
+    </div>

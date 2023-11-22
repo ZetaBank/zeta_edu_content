@@ -1,0 +1,42 @@
+Convert Image File
+======================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Follow along: Convert Image File
+        </p>
+        <div class="line-block">
+            <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
+        </div>
+        <ul>
+            <li>Create a new *.ipynb file Jupyter Notebook</li>
+            <li>Fill in the content below in the newly created file</li>
+            <li>Follow and Execute the example codes</li>
+        </ul>
+        <div class="line">(The Jetson Board used for these examples are => Jetson Nano)</div>
+        
+    </div>
+
+.. raw:: html
+
+- 2.gray.py
+
+.. code-block:: python
+
+    import cv2
+
+    image = cv2.imread('image.jpg', cv2.IMREAD_GRAYSCALE)
+    cv2.imshow('Grayscale Image', image)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+
+- code progress
+
+    1. Read the 'image.jpg' file in black and white and save it as an image object.
+    2. Display the image in a new window with the title 'Grayscale Image'.
+    3. Keep the screen on until the user presses any key on the keyboard.
+    4. Close all OpenCV windows when keyboard input is received.
+
+.. thumbnail:: /_images/opencv/opencv_2.png

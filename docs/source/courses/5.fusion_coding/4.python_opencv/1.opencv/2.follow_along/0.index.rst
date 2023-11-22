@@ -1,0 +1,11 @@
+Follow Along!
+================
+
+
+Here are the contents for this section:
+
+.. toctree:: 
+
+    1.open
+    2.gray
+    3.rotate

@@ -1,0 +1,15 @@
+Explanation
+=============================================
+
+Features of OpenCV
+---------------------------------------------
+
+- Provides various functions and tools for computer vision tasks.
+
+- Object detection, tracking, and recognition can be performed in real time in images.
+
+- Supports various algorithms such as face recognition, object tracking, and feature point detection.
+
+- Supports filtering algorithms such as filtering, edge detection, and histogram.
+
+- Ability to perform tasks by integrating with machine learning and deep learning models.

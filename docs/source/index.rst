@@ -132,6 +132,9 @@ In Education Provided by ZetaBank:
     courses/5.fusion_coding/1.python_1/0.index
     courses/5.fusion_coding/2.python_2/0.index
     courses/5.fusion_coding/3.python_3/0.index
+    courses/5.fusion_coding/3.python_numpy/0.index
+    courses/5.fusion_coding/4.python_opencv/0.index
+    courses/5.fusion_coding/5.python_nno/0.index
     courses/line
     courses/5.fusion_coding/5.pyqt_1/0.index
     courses/5.fusion_coding/6.pyqt_2/0.index
@@ -166,7 +169,8 @@ In Education Provided by ZetaBank:
 
     courses/8.cooperation/0.intro/0.index
     courses/line
-    
+    courses/8.cooperation/1.code_analysis/0.index
+
 .. toctree::
     :caption: Application Cases
     :hidden:

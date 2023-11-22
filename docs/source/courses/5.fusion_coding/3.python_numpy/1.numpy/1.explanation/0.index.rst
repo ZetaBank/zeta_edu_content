@@ -1,0 +1,17 @@
+Explanation
+=============================================
+
+Features of NumPy
+---------------------------------------------
+
+- A key role in the Python data science ecosystem.
+
+- Can effectively handle multidimensional arrays.
+
+- Supports various data structures such as vectors, matrices, tensors, etc.
+
+- Provides basic functions and tools required for linear algebra operations.
+
+- Supports various mathematical functions such as random number generation and statistical functions.
+
+- Supports various elements such as slicing, fancy indexing, and Boolean indexing.

@@ -1,0 +1,47 @@
+Inverse Matrix Transformation
+======================
+
+.. raw:: html
+    
+    <div style="background: #C3F8FF" class="admonition note custom">
+        <p style="background: light-blue" class="admonition-title">
+            Follow along: Inverse Matrix Transformation
+        </p>
+        <div class="line-block">
+            <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
+        </div>
+        <ul>
+            <li>Create a new *.ipynb file Jupyter Notebook</li>
+            <li>Fill in the content below in the newly created file</li>
+            <li>Follow and Execute the example codes</li>
+        </ul>
+        <div class="line">(The Jetson Board used for these examples are => Jetson Nano)</div>
+        
+    </div>
+
+.. raw:: html
+
+- 2.inverse.py
+
+.. code-block:: python
+
+    import numpy as np
+
+    matrix = np.array([[1, 2], [3, 4]])
+    print(matrix)
+    print('------')
+    inverse_matrix = np.linalg.inv(matrix)
+    print(inverse_matrix)
+
+- code progress
+
+    1. Create a matrix of size 2x2.
+    2. Print the generated matrix.
+    3. Create inverse matrix of original matrix.
+    4. Generated inverse matrix output.
+
+.. thumbnail:: /_images/numpy/numpy_3.png
+
+|
+
+.. thumbnail:: /_images/numpy/numpy_4.png

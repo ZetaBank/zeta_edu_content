@@ -6,7 +6,6 @@ Here are the contents for this section:
 
 .. toctree:: 
 
-    2.variable
-    3.control_statement
-    4.function
-    5.chatgpt
+    1.blur
+    2.crop
+    3.edge
