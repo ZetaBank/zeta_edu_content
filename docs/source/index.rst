@@ -160,14 +160,12 @@ In Education Provided by ZetaBank:
     courses/line
     courses/7.problem_solve/1.seven_mins/0.index
 
-
 .. toctree::
     :caption: Cooperation
     :hidden:
 
     courses/8.cooperation/0.intro/0.index
     courses/line
-
     
 .. toctree::
     :caption: Application Cases
