@@ -174,6 +174,7 @@ In Education Provided by ZetaBank:
     courses/8.cooperation/0.intro/0.index
     courses/line
     courses/8.cooperation/1.code_analysis/0.index
+    courses/8.cooperation/2.game_section/0.index
 
 .. toctree::
     :caption: Application Cases

@@ -1,0 +1,10 @@
+Team GAME Section
+===========================
+
+Here are the follow along contents:
+
+.. toctree:: 
+
+    1.ball_game
+    2.snake_game
+    3.pong_game

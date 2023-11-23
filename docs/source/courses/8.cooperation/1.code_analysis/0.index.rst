@@ -3,6 +3,8 @@ Team Code Analysis
 
 Analyze how the code works by team.
 
+Part 1. Easy
+-------------------
 
 1. calculator.py
 
@@ -77,6 +79,8 @@ Analyze how the code works by team.
     # Run the function
     hello_world()
 
+Part 2. Intermediate
+-------------------
 
 5. guess_number.py
 
@@ -223,6 +227,8 @@ Analyze how the code works by team.
     if __name__ == "__main__":
         main()  # Run the main game loop
 
+Part 3. Hard
+-------------------
 
 9. diamond.py
 

@@ -1,7 +1,7 @@
-7 Minute Problem
+7 Minutes Mission
 ===================
 
-Write complete code for each problem in 7 minutes
+Write complete code for each mission in 7 minutes
 
 1. Write a Python script that receives an integer as input from the user, calculates the square of that number, and outputs it.
 
