@@ -1,18 +1,17 @@
-====================
-Compare Color Image and Depth Image
+Convert Depth Image to Text and Output
 ====================
 
 .. raw:: html
     
     <div style="background: #C3F8FF" class="admonition note custom">
         <p style="background: light-blue" class="admonition-title">
-            Follow along: Compare Color Image and Depth Image
+            Follow along: Convert Depth Image to Text and Output
         </p>
         <div class="line-block">
             <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
         </div>
         <ul>
-            <li>Open the 01_04_Depth_Comparison.ipynb Jupyter Notebook.</li>
+            <li>Open the 01_04_image_to_text_1.ipynb Jupyter Notebook.</li>
             <li>Compares the rgb image and the depth image and outputs it to the display connected to the jetson nano.</li>
             <li>Make sure your display is connected to your Jetson Nano!</li>
 
@@ -26,33 +25,33 @@ Compare Color Image and Depth Image
 
     <hr>
 
--   01_04_Depth_Comparison.ipynb
+-   01_04_image_to_text_1.ipynb
 -   | Running the cell code.
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/depth_camera/depth_ex_1-1.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_4-1.png
 
 -   Set environment variables before running the code.
 
 .. code-block:: python
 
     %env DISPLAY=:0
-    %env PROGRAM_PATH=/root/scripts/aikit/lecture/
+    %env PROGRAM_PATH==/root/scripts/aikit/lecture/02_REALSENSE
 
 
 -   Check the Python code to be executed. When the cell is executed, the contents of the corresponding Python code are output.
 
 .. code-block:: python
 
-    !cat $PROGRAM_PATH/01_04_Depth_Comparison.py
+    !cat $PROGRAM_PATH/01_04_image_to_text_1.py
 
 -   Execute that code.
 
 .. code-block:: python
 
-    !python3 $PROGRAM_PATH/01_04_Depth_Comparison.py
+    !python3 $PROGRAM_PATH/01_04_image_to_text_1.py
 
 -   If executed correctly, the following window will appear on the Jetson Nano and the connected display.
 
-.. thumbnail:: /_images/depth_camera/depth_ex_1-2.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_4-2.png
 

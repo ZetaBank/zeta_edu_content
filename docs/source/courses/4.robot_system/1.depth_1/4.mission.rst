@@ -19,11 +19,11 @@ Mission
 
     <hr>
 
--   01_08_distance_measurement_steps.ipynb
+-   01_10_distance_measurement_steps.ipynb
 -   | Running the cell code.
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/depth_camera/depth_pr_1-1.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_10-1.png
 
 How to Excute the Python File
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -33,29 +33,29 @@ How to Excute the Python File
 .. code-block:: python
 
     %env DISPLAY=:0
-    %env PROGRAM_PATH=/root/scripts/aikit/lecture
+    %env PROGRAM_PATH==/root/scripts/aikit/lecture/02_REALSENSE
 
 -   Check the contents of the Python file to be executed.
 
 .. code-block:: python
 
-    !cat $PROGRAM_PATH/01_08_distance_measurement_steps.py
+    !cat $PROGRAM_PATH/01_10_distance_measurement_steps.py
 
 -   Check the contents of the Python file to be executed.
 
 .. code-block:: python
 
-    !cat $PROGRAM_PATH/01_08_distance_measurement_steps.py
+    !cat $PROGRAM_PATH/01_10_distance_measurement_steps.py
 
 -   Excute the Python file.
 
 .. code-block:: python
 
-    !python3 $PROGRAM_PATH/01_08_distance_measurement_steps.py
+    !python3 $PROGRAM_PATH/01_10_distance_measurement_steps.py
 
 -   If executed correctly, the following window will appear on the Jetson Nano's display.
 
-.. thumbnail:: /_images/depth_camera/depth_pr_1-2.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_10-2.png
 
 Python File Description
 ^^^^^^^^^^^^^^^^^^^^^^^

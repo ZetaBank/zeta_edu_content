@@ -1,0 +1,28 @@
+Introducing Intel RealSense
+====================
+
+Intel RealSense D435i
+--------------------
+
+.. thumbnail:: /_images/depth_camera/realsense_1.jpg
+
+|
+
+.. thumbnail:: /_images/depth_camera/realsense_2.jpg
+
+
+Pyrealsense2 Library
+--------------------
+
+- Python binding library for Intel RealSense cameras.
+
+- Used to control RealSense cameras and effectively capture and process data.
+
+- Supports multiple data streams from depth, color, infrared, IMU and other sensors.
+
+- Programmatic control of various camera settings and options allows for more accurate data capture and analysis.
+
+- Depth streams enable generation of 3D point cloud data, making them ideal for computer vision and robotics applications.
+
+- RealSense camera data available in Robot Operating System (ROS) and ROS2.
+
