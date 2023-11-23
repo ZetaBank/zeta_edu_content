@@ -1,4 +1,4 @@
-AI Mission (AI)
+Team AI Mission
 ================
 
 .. raw:: html
