@@ -29,7 +29,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 -   | Running the cell code.
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-1.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-1.png
 
 -   Load the modules needed to run your code.
 
@@ -68,7 +68,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Display the loaded image in rgb color.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-2.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-2.png
 
 .. code-block:: python
 
@@ -80,10 +80,10 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Display the loaded image in colorized depth.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-3.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-3.png
 
 .. code-block:: python
-    
+
     # Colorize depth frame using the RealSense colorizer:
     colorizer = rs.colorizer()
     colorized_depth = np.asanyarray(colorizer.colorize(depth_frame).get_data())
@@ -91,7 +91,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Display an image by comparing an RGB color image to a color depth image.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-4.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-4.png
 
 .. code-block:: python
 
@@ -109,7 +109,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Load the model to use SSD-MobileNet and display the detected class.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-5.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-5.png
 
 .. code-block:: python
 
@@ -156,7 +156,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Use the depth to guess the size of the detected object.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-6.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-6.png
 
 .. code-block:: python
 
@@ -175,7 +175,7 @@ Detecting object distance using Depth Camera and SSD-Mobilenet
 
 -   Measure the distance of the detected object.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_8-7.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_9-7.png
 
 .. code-block:: python
 
