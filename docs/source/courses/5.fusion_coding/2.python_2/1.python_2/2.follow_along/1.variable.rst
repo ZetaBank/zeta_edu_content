@@ -5,7 +5,7 @@ Variables
     
     <div style="background: #C3F8FF" class="admonition note custom">
         <p style="background: light-blue" class="admonition-title">
-            Follow along: Python Variables
+            Follow along: Variables
         </p>
         <div class="line-block">
             <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
@@ -189,7 +189,7 @@ String Variables
     life = 'too\nshort'
     print(life)
 
-List Variables
+List Data Type
 ----------------------
 
 .. code-block:: python
@@ -327,7 +327,7 @@ List Variables
     print(d)
 
 
-Tuple Variables
+Tuple Data Type
 ----------------------
 
 .. code-block:: python
@@ -365,7 +365,7 @@ Tuple Variables
     print(d)
 
 
-Dictionary Variables
+Dictionary Data Type
 ----------------------
 
 .. code-block:: python
@@ -395,7 +395,7 @@ Dictionary Variables
     print('name' in a)
 
 
-Set Variables
+Set Data Type
 ----------------------
 
 .. code-block:: python
@@ -416,7 +416,7 @@ Set Variables
     print(s2.difference(s1))
 
 
-Bool Variables
+Bool Data Type
 ----------------------
 
 .. code-block:: python

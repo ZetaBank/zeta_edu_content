@@ -21,58 +21,292 @@ Functions and Classes
 
 .. raw:: html
 
-Function
+- Let's write the following examples.
+
+Functions
 ----------------------
 
 .. code-block:: python
 
-    # Defining a Function
-    def greet(name):
-        return f"Hello, {name}!"
-
-    # Calling the Function
-    message = greet("Alice")
-    print(message)
-
-    # Defining a Function with Default Parameter
-    def add_numbers(a, b=0):
+    # 1
+    def sum(a, b):
         return a + b
 
-    # Calling the Function with Different Arguments
-    result1 = add_numbers(5, 3)
-    result2 = add_numbers(7)
-    print("Result 1:", result1)
-    print("Result 2:", result2)
+    a = 1
+    b = 2
+    c = sum(a, b)
+    print('c:', c)
 
-Class
+
+.. code-block:: python
+
+    # 2
+    def sum(a, b):
+        result = a + b
+        return result
+
+    a = 1
+    b = 2
+    c = sum(a, b)
+    print('c:', c)
+
+
+.. code-block:: python
+
+    # 3
+    def say():
+        print('Say "Hello" to my little friend!')
+
+    say()
+
+
+.. code-block:: python
+
+    # 4
+    def say(text):
+        print('Say "%s" to my little friend!' %(text))
+
+    say("Good bye")
+
+
+.. code-block:: python
+
+    # 5
+    def say_hello(say, text='Hello'):
+        if say:
+            print('Say "%s" to my little friend!' % (text))
+        else:
+            print('Say nothing to my little friend!')
+
+    input_text = input("Enter a text: ")
+    say_hello(input_text)
+
+
+.. code-block:: python
+
+    # 6
+    import sys
+
+    def say_hello(say, text='Hello'):
+        if say:
+            print('Say "%s" to my little friend!' % (text))
+        else:
+            print('Say nothing to my little friend!')
+
+    if len(sys.argv) >= 2:
+        input_text = sys.argv[1]
+
+    else:
+        input_text = ''
+
+    say_hello(input_text)
+
+
+.. code-block:: python
+
+    # 7
+    def life_quote():
+        a1 = "All work and no play"
+        b1 = " makes Jack a dull boy.\n"
+        c1 = 3
+        return a1, b1, c1
+        
+    a2, b2, c2 = life_quote()
+    print((a2 + b2) * 3)
+
+
+.. code-block:: python
+
+    # 8
+    name = 'Jack Torrance'
+
+    def called_me_1():
+        name = 'Johnny'
+        return name
+
+    called_me_1()
+    print("Here's (%s)!" %(name))
+
+    def called_me_2():
+        global name
+        name = 'Johnny'
+        return name
+
+    called_me_2()
+    print("Here's (%s)!" %(name))
+
+
+Classes
 ----------------------
 
 .. code-block:: python
-    
-    # Defining a Class
-    class Rectangle:
-        def __init__(self, width, height):
-            self.width = width
-            self.height = height
 
-        def calculate_area(self):
-            return self.width * self.height
+    # 1
+    class Calculator:
+        def adder(self, num_1, num_2):
+            result = num_1 + num_2
+            print('%s + %s = %s' %(num_1, num_2, result))
+            
+        
+        def subtractor(self, num_1, num_2):
+            result = num_1 - num_2
+            print('%s - %s = %s' %(num_1, num_2, result))
 
-    # Creating Objects of the Class
-    rect1 = Rectangle(10, 5)
-    rect2 = Rectangle(8, 6)
+    calc = Calculator()
 
-    # Calling Methods on the Objects
-    area1 = rect1.calculate_area()
-    area2 = rect2.calculate_area()
-    print("Area 1:", area1)
-    print("Area 2:", area2)
+    calc.adder(2, 1)
+    calc.subtractor(2, 1)
 
-More Code Examples
-----------------------
 
-- Feel like you're not familiar enough with Python yet?
+.. code-block:: python
 
-- More Python examples in the link below!
+    # 2
+    class Calculator:
+        def __init__(self):
+            self.result = 0
 
-<https://github.com/ZetaBank/zeta_education_examples/>
+        def adder(self, num_1, num_2):
+            self.result = num_1 + num_2
+            return self.result
+            
+        
+        def subtractor(self, num_1, num_2):
+            self.result = num_1 - num_2
+            return self.result
+
+    calc = Calculator()
+
+    num = [2, 1]
+    print('%s + %s = %s' %(num[0], num[1], calc.adder(num[0], num[1])))
+    print('%s - %s = %s' %(num[0], num[1], calc.subtractor(num[0], num[1])))
+
+
+.. code-block:: python
+
+    # 3
+    class Say:
+        def first_one(self, thing_1):
+            self.thing_1 = thing_1
+            
+        def last_one(self, thing_2):
+            self.thing_2 = thing_2
+
+        def say(self):
+            print('The %s is %s!' %(self.thing_1, self.thing_2))
+
+    say = Say()
+
+    say.thing_1 = 'World'
+    say.thing_2 = 'Yours'
+    say.say()
+
+
+.. code-block:: python
+
+    # 4
+    class Say:
+        def __init__(self):
+            self.thing_2 = 'Yours'
+
+        def first_one(self, thing_1):
+            self.thing_1 = thing_1
+            
+        def last_one(self, thing_2):
+            self.thing_2 = thing_2
+
+        def say(self):
+            print('The %s is %s!' %(self.thing_1, self.thing_2))
+
+    say = Say()
+
+    say.thing_1 = 'World'
+    say.say()
+    say.thing_2 = 'Mine'
+    say.say()
+
+
+.. code-block:: python
+
+    # 5
+    class Say:
+        def __init__(self, thing_1, thing_2):
+            self.thing_1 = thing_1
+            self.thing_2 = thing_2
+
+        def first_one(self, thing_1):
+            self.thing_1 = thing_1
+            
+        def last_one(self, thing_2):
+            self.thing_2 = thing_2
+
+        def say(self):
+            print('The %s is %s!' %(self.thing_1, self.thing_2))
+
+    say = Say("World", "Yours")
+    say.say()
+    say.thing_2 = "Mine"
+    say.say()
+
+
+.. code-block:: python
+
+    # 6
+    class Calc:
+        def set_num(self, num_1, num_2):
+            self.num_1 = num_1
+            self.num_2 = num_2
+        
+        def sum(self):
+            result = self.num_1 + self.num_2
+            return result
+        
+        def sub(self):
+            result = self.num_1 - self.num_2
+            return result
+        
+        def mul(self):
+            result = self.num_1 * self.num_2
+            return result
+        
+        def div(self):
+            result = self.num_1 / self.num_2
+            return result
+
+    calc = Calc()
+
+    calc.set_num(4, 2)
+    print(calc.sum())
+    print(calc.sub())
+    print(calc.mul())
+    print(calc.div())
+
+
+.. code-block:: python 
+
+    # 7
+    class Jack:
+        last_name = "Torrance"
+
+        def __init__(self, name):
+            self.full_name = name + ' ' +  self.last_name
+            
+        def trip(self, place):
+            print("%s's family is going on a trip to %s." % (self.full_name, place))
+
+        def __add__(self, other):
+            print("%s and %s are married to each other." % (self.full_name, other.full_name))
+
+        def __sub__(self, other):
+            print("%s and %s have now broken up." % (self.full_name, other.full_name))
+
+    class Wendy(Jack):
+        def __init__(self, name):
+            super().__init__(name)
+
+    jack = Jack("Jack")
+    wendy = Wendy("Wendy")
+
+    jack.trip("Overlook Hotel")
+    jack + wendy
+    jack - wendy
+
