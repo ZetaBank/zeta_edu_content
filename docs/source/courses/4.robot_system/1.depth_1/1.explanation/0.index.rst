@@ -4,11 +4,11 @@ Introducing Intel RealSense
 Intel RealSense D435i
 --------------------
 
-.. thumbnail:: /_images/depth_camera/realsense_1.jpg
+.. thumbnail:: /_images/depth_camera/realsense_1.png
 
 |
 
-.. thumbnail:: /_images/depth_camera/realsense_2.jpg
+.. thumbnail:: /_images/depth_camera/realsense_2.png
 
 
 Pyrealsense2 Library

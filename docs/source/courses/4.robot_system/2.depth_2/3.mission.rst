@@ -19,7 +19,7 @@ Mission
 
     <hr>
 
--   01_09_distance_measurement_metric.ipynb
+-   01_11_distance_measurement_metric.ipynb
 -   | Running the cell code.
     | `Ctrl + Enter`
 

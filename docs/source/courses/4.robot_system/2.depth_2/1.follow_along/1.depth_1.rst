@@ -1,17 +1,17 @@
-Background Removal Using Depth Image
+Display Depth Image to Text via Widget
 ====================
 
 .. raw:: html
     
     <div style="background: #C3F8FF" class="admonition note custom">
         <p style="background: light-blue" class="admonition-title">
-            Follow along: Background Removal Using Depth Image
+            Follow along: Convert Depth Image to Text and Output
         </p>
         <div class="line-block">
             <div class="line">The program launching process along with parameter settings are all simplified and set up on the Jupyter Notebook Environment.</div>
         </div>
         <ul>
-            <li>Open the 01_06_depth_color_alignment.ipynb Jupyter Notebook.</li>
+            <li>Open the 01_07_image_to_text_2.ipynb Jupyter Notebook.</li>
             <li>Compares the rgb image and the depth image and outputs it to the display connected to the jetson nano.</li>
             <li>Make sure your display is connected to your Jetson Nano!</li>
 
@@ -25,11 +25,11 @@ Background Removal Using Depth Image
 
     <hr>
 
--   01_06_depth_color_alignment.ipynb
+-   01_07_image_to_text_2.ipynb
 -   | Running the cell code.
     | `Ctrl + Enter`
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_6-1.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_7-1.png
 
 -   Set environment variables before running the code.
 
@@ -43,15 +43,15 @@ Background Removal Using Depth Image
 
 .. code-block:: python
 
-    !cat $PROGRAM_PATH/01_06_depth_color_alignment.py
+    !cat $PROGRAM_PATH/01_07_image_to_text_2.py
 
 -   Execute that code.
 
 .. code-block:: python
 
-    !python3 $PROGRAM_PATH/01_06_depth_color_alignment.py
+    !python3 $PROGRAM_PATH/01_07_image_to_text_2.py
 
 -   If executed correctly, the following window will appear on the Jetson Nano and the connected display.
 
-.. thumbnail:: /_images/depth_camera/realsense_ex_6-2.png
+.. thumbnail:: /_images/depth_camera/realsense_ex_7-2.png
 
