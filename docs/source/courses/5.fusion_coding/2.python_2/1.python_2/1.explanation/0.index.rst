@@ -333,7 +333,7 @@ for Statement
     .. code-block:: python
 
         for (variable) in (list, tuple, string):
-        (statement to be executed)
+            (statement to be executed)
 
 
 - range function:
@@ -368,7 +368,7 @@ A function is a block of code that performs a specific task. It takes input, pro
 .. code-block:: python
 
     def greet(name):
-    return f"Hello, {name}!"
+        return f"Hello, {name}!"
 
     message = greet("Alice")
     print(message)
@@ -379,7 +379,7 @@ Functions can have default parameter values, which are used when an argument is 
 .. code-block:: python
 
     def add_numbers(a, b=0):
-    return a + b
+        return a + b
 
     result1 = add_numbers(5, 3)
     result2 = add_numbers(7)
@@ -392,12 +392,12 @@ A class is a blueprint for creating objects that have attributes (variables) and
 .. code-block:: python
     
     class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
 
-    def calculate_area(self):
-        return self.width * self.height
+        def calculate_area(self):
+            return self.width * self.height
 
     rect1 = Rectangle(10, 5)
     rect2 = Rectangle(8, 6)
@@ -421,8 +421,8 @@ Functions
     .. code-block:: python
 
         def function name (input):
-        statement to execute
-        return result value
+            statement to execute
+            return result value
 
 
 - When there is no input value, when there is no result value.

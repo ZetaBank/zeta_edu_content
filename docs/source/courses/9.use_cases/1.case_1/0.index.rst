@@ -5,7 +5,8 @@ Use Cases
 
 Zetabank Model-D
 -------------------
-`https://manual-model-d.readthedocs.io/en/latest/`_
+
+`<https://manual-model-d.readthedocs.io>`_
 
 Model-D for Disinfection
 
@@ -13,7 +14,8 @@ Model-D for Disinfection
 
 Zetabank Model-C
 -------------------
-`https://manual-model-c.readthedocs.io/en/latest/`_
+
+`<https://manual-model-c.readthedocs.io>`_
 
 Model-C for Untact Service
 
@@ -21,6 +23,7 @@ Model-C for Untact Service
 
 Zetabank Model-I
 -------------------
-`https://manual-model-i.readthedocs.io/en/latest/`_
+
+`<https://manual-model-i.readthedocs.io>`_
 
 Model-I for Ultimate Disinfection
