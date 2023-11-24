@@ -18,3 +18,7 @@ Team DIY UI
     </div>
 
 .. raw:: html
+
+1. Let's create a UI for each team using what we have learned and the background net photos we practiced earlier.
+
+2. You can use what you learned in the PYQT class by mixing it appropriately.
