@@ -59,11 +59,10 @@ In Education Provided by ZetaBank:
     courses/0.introduction/2.ai_purpose/0.index
     courses/0.introduction/3.future_convergence_talent/0.index
     courses/0.introduction/4.ros_intro/0.index
-    courses/0.introduction/5.issue_analysis/0.index
     courses/line
-    courses/0.introduction/6.robot_component/0.index
-    courses/0.introduction/7.assembly/0.index
-    courses/0.introduction/8.control_robot/0.index
+    courses/0.introduction/5.robot_component/0.index
+    courses/0.introduction/6.assembly/0.index
+    courses/0.introduction/7.control_robot/0.index
 
 .. toctree:: 
     :caption: AI Education
@@ -80,10 +79,10 @@ In Education Provided by ZetaBank:
     courses/1.ai_education/7.ai_pose_5/0.index
     courses/1.ai_education/8.ai_depth_6/0.index
     courses/1.ai_education/9.team_diy/0.index
-    courses/1.ai_education/10.team_quiz/0.index
-    courses/1.ai_education/11.issue_analysis/0.index
-    courses/1.ai_education/12.mid_test/0.index
-    courses/1.ai_education/13.ai_mission/0.index
+    courses/1.ai_education/10.ai_mission/0.index
+    courses/line
+    courses/1.ai_education/11.team_quiz/0.index
+
 
 .. toctree:: 
     :caption: Robot Control
@@ -98,6 +97,8 @@ In Education Provided by ZetaBank:
     courses/2.robot_control/5.ros_3/0.index
     courses/2.robot_control/6.ros_4/0.index
     courses/2.robot_control/7.ros_5/0.index
+    courses/line
+    courses/1.ai_education/8.team_quiz/0.index
 
 .. toctree:: 
     :caption: Robot Arm Control
@@ -110,8 +111,8 @@ In Education Provided by ZetaBank:
     courses/3.robot_arm/3.robot_arm_2/0.index
     courses/3.robot_arm/4.robot_arm_3/0.index
     courses/3.robot_arm/5.team_diy/0.index
-    courses/3.robot_arm/6.team_diy_presentation/0.index
-    courses/3.robot_arm/7.team_quiz/0.index
+    courses/line
+    courses/3.robot_arm/6.team_quiz/0.index
 
 .. toctree:: 
     :caption: Robot System
@@ -121,7 +122,8 @@ In Education Provided by ZetaBank:
     courses/line
     courses/4.robot_system/1.depth_1/0.index
     courses/4.robot_system/2.depth_2/0.index
-    courses/4.robot_system/3.issue_analysis/0.index
+    courses/line
+    courses/4.robot_system/3.team_quiz/0.index
 
 .. toctree:: 
     :caption: Fusion Coding
@@ -142,10 +144,10 @@ In Education Provided by ZetaBank:
     courses/5.fusion_coding/10.pyqt_3/0.index
     courses/5.fusion_coding/11.pyqt_4/0.index
     courses/5.fusion_coding/12.pyqt_5/0.index
-    courses/5.fusion_coding/13.issue_analysis/0.index
-    courses/5.fusion_coding/14.team_diy/0.index
-    courses/5.fusion_coding/15.team_diy_presentation/0.index
-    courses/5.fusion_coding/16.team_diy_system/0.index
+    courses/5.fusion_coding/13.team_diy/0.index
+    courses/5.fusion_coding/14.team_diy_system/0.index
+    courses/line
+    courses/5.fusion_coding/15.team_quiz/0.index
 
 .. toctree::
     :caption: Autonomous Driving
@@ -157,13 +159,21 @@ In Education Provided by ZetaBank:
     courses/6.autonomous_driving/2.slam_navigation/1.index
     courses/6.autonomous_driving/3.robot_drive_1/0.index
     courses/6.autonomous_driving/4.robot_drive_2/0.index
+    courses/line
+    courses/6.autonomous_driving/5.team_quiz/0.index
+
+
 .. toctree::
     :caption: Problem Solving
     :hidden:
 
     courses/7.problem_solve/0.intro/0.index
     courses/line
-    courses/7.problem_solve/1.seven_mins/0.index
+    courses/7.problem_solve/1.issue_analysis/0.index
+    courses/7.problem_solve/2.issue_analysis/0.index
+    courses/7.problem_solve/3.issue_analysis/0.index
+    courses/7.problem_solve/4.issue_analysis/0.index
+
 
 .. toctree::
     :caption: Cooperation
@@ -172,7 +182,8 @@ In Education Provided by ZetaBank:
     courses/8.cooperation/0.intro/0.index
     courses/line
     courses/8.cooperation/1.code_analysis/0.index
-    courses/8.cooperation/2.game_section/0.index
+    courses/8.cooperation/2.seven_mins/0.index
+    courses/8.cooperation/3.game_section/0.index
 
 .. toctree::
     :caption: Application Cases

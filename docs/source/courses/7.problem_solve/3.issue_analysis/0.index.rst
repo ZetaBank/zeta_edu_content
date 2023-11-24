@@ -1,4 +1,4 @@
-Issue Analysis Project
+Issue Analysis Project: Mobility
 ================
 
 .. raw:: html
@@ -19,10 +19,10 @@ Issue Analysis Project
 
 .. raw:: html
 
-Topic: Does hardware matter in the future?
+Topic: How will autonomous driving and mobility change?
 
-Reference: 'The Hardware Startup: Building Your Product, Business, and Brand' by Renee DiResta (Author), Brady Forrest (Author), Ryan Vinyard (Author)
-            <https://www.yes24.com/Product/Goods/32517549/>
+Reference: 'The Future of Mobility' by Seo Seong-hyun (Author)
+            <https://www.yes24.com/Product/Goods/105386907/>
 
 Evaluation Standard:
     1. Submit a report of 20 pages or more
