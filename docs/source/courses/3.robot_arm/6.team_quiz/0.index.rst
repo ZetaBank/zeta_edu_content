@@ -1,14 +1,14 @@
-Team Problem Solving (Robot Arm)
+Team Evaluation (Robot Arm)
 ================
 
 .. raw:: html
     
     <div style="background: #C3F8FF" class="admonition note custom">
         <p style="background: light-blue" class="admonition-title">
-            Team Quiz: Robot Arm
+            Team Evaluation: Robot Arm
         </p>
         <div class="line-block">
-            <div class="line">This is a team problem solving session where each team solves a quiz.</div>
+            <div class="line">This is a team evaluation session where each team solves a quiz.</div>
         </div>
         <ul>
             <li>Let's use what we've learned so far to find the answer to the quiz.</li>
