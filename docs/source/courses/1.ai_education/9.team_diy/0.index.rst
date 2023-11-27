@@ -35,7 +35,7 @@ Create a team AI
 
 Transfer the photos you took to the robot
 ----------------
-How to transfer your own photos to a robot
+How to transfer your own photos to a robot:
 1. Move the photos you took to your laptop or PC.
 2. Connect the robot to Wi-Fi.
 3. Open cmd and go to the path where your photo is located.
