@@ -72,7 +72,9 @@ Step 3: Create the Service Node
         }
 
 
-Step 4: Create the Client 
+Step 4: Create the Client
+
+- Create another source file for the client node. For example, service_client.cpp:
 
     .. code-block:: cpp
 
