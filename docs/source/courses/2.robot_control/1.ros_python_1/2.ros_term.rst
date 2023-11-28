@@ -1,0 +1,146 @@
+ROS Terminology
+=============
+
+Node
+-------------
+
+- It is a term referring to the smallest unit of executable processor and can be thought of as a single executable program.
+
+- Each node can exchange data with nodes written in different languages through message communication.
+
+- In ROS, it is recommended to develop one node for one purpose.
+
+- There is a Master that manages the nodes.
+
+- In other words, a node is created and information can be given to the master and communication can be performed through it.
+
+Package
+-------------
+
+- It is the basic unit of ROS software.
+
+- It is literally a package. It is a bundle of one or more nodes and information for node execution.
+
+- When nodes are grouped together, it is called a package, and when packages are bundled together, it is called a metapackage.
+
+Message
+-------------
+
+- Data is exchanged between nodes through messages.
+
+- Messages are basically in the form of variables, and can also be used in a structure such as an array containing a message or multiple messages.
+
+- For communication, topics and services are used depending on the transmission and reception method.
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_topic_1.png
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_service_1.png
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_action_1.png
+
+Topic
+-------------
+
+1. Publisher
+
+    - It means that it is a publisher, and it literally continues to deliver the information it has decided even if no request is received.
+
+    - It doesn't matter whether the information is needed or not, just send it out in droves.
+
+    - Take YouTube, for example, and it is a streamer. Streamers broadcast broadcasts whether we watch them or not.
+
+2. Subscriber
+
+    - Used YouTube as an example above, but it is convenient to think of Subscriber as a subscriber on YouTube.
+
+    - Find and watch content that interests me.
+
+    - At this time, the publisher mentioned above continues with the content (topic) to be exported.
+
+    - Since it is being sent out, the Subscriber is able to see it right away if it is of interest.
+
+3. Topic
+
+    - Topic is content (topic) on YouTube.
+
+    - Creates a connection between streamers and subscribers.
+
+    - You can think of it as a matter of mutual interest.
+
+    - This means that if the Publisher is sending data containing direction information and the Subscriber is receiving the information, the data containing the direction information that exists between the two becomes the Topic.
+
+    - Topic is said to be one-way communication because only the Publisher is transmitted to the Subscriber.
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_topic_2.png
+
+Service
+-------------
+
+1. Service client
+
+    - A service client requests a certain service from the service server.
+
+    - For example, a client wants to know the current time, so it requests a time-related service, and receives a time-related service response from the server.
+
+2. Service server
+
+    - Unlike Publisher, Service Server responds only when a service request is made from a client.
+
+    - When a request comes in from a client, the service immediately responds with content related to the request.
+
+3. Service
+
+    - Service serves to connect the server and client. It can be anything the client requests.
+
+    - Service is said to be two-way communication because a request is made and a response is received.
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_service_2.png
+
+1. Action client
+
+    - Action client literally delivers Action (action, execution).
+
+    - As in the example above, the client transmits information from the server regarding an action (housework) that is not a single task, receives intermediate results from the server, and finally receives results from the server. Because it is an action and execution part, you cannot receive a response right away like a service, and because you receive a response after it is completely completed, the response time is long.
+
+2. Action server
+
+    - Action Receives action from client and takes action.
+
+    - Serves as an interim report and delivers it to the client, and when the content received is completed
+
+    - The final result is delivered to the client.
+
+3. Action
+
+    - It is a link between the above two. The action that the server must perform when delivered by the client is called Action. As mentioned above, this Action is a time-consuming task.
+
+    - Action, like Service, can be viewed as two-way communication.
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_action_2.png
+
+Parameter
+-------------
+
+- Parameters can be considered the same as a service as they run a parameter-related parameter server on each node and change parameters through communication between external parameter clients.
+
+- However, the purpose can be seen as different in that parameters within the node or global parameters can be easily set or changed inside or outside the node using the service message communication method, and can be easily retrieved and used. .
+
+- Define parameters to be set in Parameter Server.
+
+- You can set the value of a parameter by specifying the value parameter setting as a txt file, bin file, or command property.
+
+- Value can only be in the form of string, int, bool, or double.
+
+- Can be processed by setting a single parameter to <param>.
+
+- YAML syntax
+
+    1. The YAML file uses .yml or .yaml extension and follow certain syntax rules.
+
+    2. YAML has features derived from Perl, C, XML, HTML, and other programming languages. In addition, YAML is a parent set of JSON, so you can use the json file in YAML.
+
+    3. Rosparam is a command line tool for interacting with the parameter server. It is mainly used to manage global settings and environmental variables.
+
+    4. The Param API allows you to interact with the ROS parameter server at the programming language level. It is used to import or set the parameter value of the node's execution logic.
+
+.. thumbnail:: /_images/course_1/2.robot_control/ros_parameter_1.png

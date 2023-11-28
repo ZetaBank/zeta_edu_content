@@ -6,6 +6,8 @@ Ubuntu 18.04
 
 - Ubuntu, a Debian-based Linux operating system, is renowned for its ease of use, stability, and extensive community support.
 
+- Free software whose source code is publicly available and open source development is possible.
+
 - Ubuntu 18.04, released in April 2018, is a Long-Term Support (LTS) version, meaning it receives updates and security patches for five years, making it a reliable choice for various applications, including robotics.
 
 Features
