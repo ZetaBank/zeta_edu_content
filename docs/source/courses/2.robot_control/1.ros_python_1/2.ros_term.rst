@@ -32,11 +32,11 @@ Message
 
 - For communication, topics and services are used depending on the transmission and reception method.
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_topic_1.png
+.. thumbnail:: /_images/robot_control/ros_topic_1.png
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_service_1.png
+.. thumbnail:: /_images/robot_control/ros_service_1.png
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_action_1.png
+.. thumbnail:: /_images/robot_control/ros_action_1.png
 
 Topic
 -------------
@@ -71,7 +71,7 @@ Topic
 
     - Topic is said to be one-way communication because only the Publisher is transmitted to the Subscriber.
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_topic_2.png
+.. thumbnail:: /_images/robot_control/ros_topic_2.png
 
 Service
 -------------
@@ -94,7 +94,7 @@ Service
 
     - Service is said to be two-way communication because a request is made and a response is received.
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_service_2.png
+.. thumbnail:: /_images/robot_control/ros_service_2.png
 
 1. Action client
 
@@ -116,7 +116,7 @@ Service
 
     - Action, like Service, can be viewed as two-way communication.
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_action_2.png
+.. thumbnail:: /_images/robot_control/ros_action_2.png
 
 Parameter
 -------------
@@ -143,4 +143,4 @@ Parameter
 
     4. The Param API allows you to interact with the ROS parameter server at the programming language level. It is used to import or set the parameter value of the node's execution logic.
 
-.. thumbnail:: /_images/course_1/2.robot_control/ros_parameter_1.png
+.. thumbnail:: /_images/robot_control/ros_parameter_1.png
