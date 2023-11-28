@@ -97,6 +97,7 @@ In Education Provided by ZetaBank:
     courses/2.robot_control/5.ros_3/0.index
     courses/2.robot_control/6.ros_4/0.index
     courses/2.robot_control/7.ros_5/0.index
+    courses/2.robot_control/8.ros_6/0.index
     courses/line
     courses/2.robot_control/8.team_quiz/0.index
 

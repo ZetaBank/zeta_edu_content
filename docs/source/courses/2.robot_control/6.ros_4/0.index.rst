@@ -25,11 +25,13 @@ Step 2: Create a ROS Package
 Step 3: Create the Publisher Node
 
 - Navigate to your package directory:
+
     .. code-block:: bash
 
         cd ~/catkin_ws/src/ros_tutorials_topic/src
 
 - Create a source file for the publisher node. For example, topic_publisher.cpp:
+
     .. code-block:: cpp
 
         #include "ros/ros.h"                            // ROS Default Header File
@@ -73,6 +75,7 @@ Step 3: Create the Publisher Node
 Step 4: Create the Subscriber Node
 
 - Create another source file for the subscriber node. For example, topic_subscriber.cpp:
+
     .. code-block:: cpp
 
         #include "ros/ros.h"                          // ROS Default Header File
@@ -134,7 +137,7 @@ Step 5: Update CMakeLists.txt
 
 Step 6: Create the launch File
 
-- Create a `union.launch` file for the publisher nodes.
+- Create a `union_msg.launch` file for nodes.
 
     .. code-block:: bash
 
@@ -142,7 +145,7 @@ Step 6: Create the launch File
 
         cd ~/catkin_ws/src/launch
 
-        touch union.launch
+        touch union_msg.launch
 
     .. code-block:: XML
 
@@ -150,8 +153,8 @@ Step 6: Create the launch File
           <node pkg="ros_tutorials_topic" type="topic_publisher" name="topic_publisher"/>
           <node pkg="ros_tutorials_topic" type="topic_subscriber" name="topic_subscriber"/>
         </launch>
-        
-Step 6: Build and Run
+
+Step 7: Build and Run
 
 - Build your package using catkin_make:
 
@@ -184,7 +187,7 @@ Step 6: Build and Run
 
         .. code-block:: bash
 
-            roslaunch ros_tutorials_topic union.launch
+            roslaunch ros_tutorials_topic union_msg.launch
 
 
 - You should see the subscriber printing the messages published by the publisher.
