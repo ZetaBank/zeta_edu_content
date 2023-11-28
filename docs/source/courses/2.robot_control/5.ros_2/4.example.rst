@@ -1,0 +1,249 @@
+C++ Tutorial Examples
+======================
+
+Hello World
+----------------------
+
+- Create a hello_world.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        std::cout << "Hello, World!" << std::endl;
+        return 0;
+    }
+
+- This is a simple "Hello World" program.
+
+- It includes the iostream header, which provides functionality for input and output.
+
+- The main function is the entry point of the program, and it prints "Hello, World!" to the console using std::cout and then returns 0 to indicate successful execution.
+
+
+Variables and Input/Output.
+----------------------
+
+- Create a in_out.cpp file.
+
+.. code-block:: cpp
+    
+    #include <iostream>
+
+    int main() {
+        int number;
+        std::cout << "Enter a number: ";
+        std::cin >> number;
+        std::cout << "You entered: " << number << std::endl;
+        return 0;
+    }
+
+- This program demonstrates variable declaration (int number;), input from the user (std::cin >> number;), and output to the console (std::cout).
+
+- It prompts the user to enter a number, reads it, and then prints the entered number.
+
+
+Arithmetic Operations
+----------------------
+
+- Create a calc.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        int a = 5, b = 3;
+        std::cout << "Sum: " << a + b << std::endl;
+        std::cout << "Difference: " << a - b << std::endl;
+        std::cout << "Product: " << a * b << std::endl;
+        std::cout << "Quotient: " << a / b << std::endl;
+        return 0;
+    }
+
+- This program performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two integers (a and b) and prints the results.
+
+Conditional Statements
+----------------------
+
+- Create a cond.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        int number;
+        std::cout << "Enter a number: ";
+        std::cin >> number;
+
+        if (number > 0) {
+            std::cout << "Number is positive." << std::endl;
+        } else if (number < 0) {
+            std::cout << "Number is negative." << std::endl;
+        } else {
+            std::cout << "Number is zero." << std::endl;
+        }
+
+        return 0;
+    }
+
+- This program uses conditional statements (if, else if, else) to determine whether a number is positive, negative, or zero based on user input.
+
+Loops
+----------------------
+
+- Create a loop.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        for (int i = 1; i <= 5; ++i) {
+            std::cout << "Iteration " << i << std::endl;
+        }
+
+        int count = 0;
+        while (count < 3) {
+            std::cout << "While loop iteration " << count + 1 << std::endl;
+            ++count;
+        }
+
+        return 0;
+    }
+
+- This program demonstrates the use of loops.
+
+- It has a for loop that iterates five times and a while loop that iterates three times.
+
+Functions
+----------------------
+
+- Create a func.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    // Function declaration
+    int add(int a, int b);
+
+    int main() {
+        int result = add(3, 4);
+        std::cout << "Sum: " << result << std::endl;
+        return 0;
+    }
+
+    // Function definition
+    int add(int a, int b) {
+        return a + b;
+    }
+
+- This program defines a simple function add that takes two integers as parameters and returns their sum.
+
+- The function is declared before main and defined afterward.
+
+Arrays
+----------------------
+
+- Create a arr.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        int numbers[] = {1, 2, 3, 4, 5};
+
+        std::cout << "Array elements: ";
+        for (int i = 0; i < 5; ++i) {
+            std::cout << numbers[i] << " ";
+        }
+        std::cout << std::endl;
+
+        return 0;
+    }
+
+- This program uses an array (int numbers[]) to store five integers and prints them using a for loop.
+
+Strings
+----------------------
+
+- Create a str.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+    #include <string>
+
+    int main() {
+        std::string greeting = "Hello, ";
+        std::string name = "Alice";
+
+        std::cout << greeting + name << std::endl;
+
+        return 0;
+    }
+
+- This program uses the std::string class to concatenate two strings and prints the result.
+
+Pointers
+----------------------
+
+- Create a ptr.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+
+    int main() {
+        int number = 42;
+        int* pointer = &number;
+
+        std::cout << "Value: " << *pointer << std::endl;
+
+        return 0;
+    }
+
+- This program demonstrates the use of pointers.
+
+- It declares an integer, creates a pointer to that integer, and prints the value pointed to by the pointer.
+
+Classes and Objects
+----------------------
+
+- Create a obj.cpp file.
+
+.. code-block:: cpp
+
+    #include <iostream>
+    #include <string>
+
+    // Class definition
+    class Student {
+    public:
+        std::string name;
+        int age;
+
+        void displayInfo() {
+            std::cout << "Name: " << name << ", Age: " << age << std::endl;
+        }
+    };
+
+    int main() {
+        // Object creation
+        Student student1;
+        student1.name = "Bob";
+        student1.age = 20;
+
+        // Accessing class members
+        student1.displayInfo();
+
+        return 0;
+    }
+
+- This program defines a simple class Student with attributes name and age, and a member function displayInfo that prints the student's information.
+
+- It then creates an object of the class and accesses its members.
