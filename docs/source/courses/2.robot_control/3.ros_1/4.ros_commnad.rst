@@ -4,7 +4,7 @@ ROS Command Line
 ROS Shell Command
 ----------------
 
-a. roscore (Type: Launch Command):
+a. `roscore` (Type: Launch Command):
 - Function: Starts the ROS master, which is the central coordination point for all ROS nodes in a system.
 
 .. code-block:: bash
@@ -14,7 +14,7 @@ a. roscore (Type: Launch Command):
     roscore
     ```
 
-b. rosrun (Type: Launch Command):
+b. `rosrun` (Type: Launch Command):
 - Function: Runs a specific node from a ROS package.
 
 .. code-block:: bash
@@ -24,7 +24,7 @@ b. rosrun (Type: Launch Command):
     rosrun my_robot_pkg controller_node
     ```
 
-c. roslaunch (Type: Launch Command):
+c. `roslaunch` (Type: Launch Command):
 - Function: Launches complex ROS systems composed of multiple nodes and configuration files.
 
 .. code-block:: bash
@@ -34,7 +34,7 @@ c. roslaunch (Type: Launch Command):
     roslaunch my_robot_pkg my_robot.launch
     ```
 
-d. rostopic (Type: Information Command):
+d. `rostopic` (Type: Information Command):
 - Function: Provides information about ROS topics.
 
 .. code-block:: bash
@@ -44,7 +44,7 @@ d. rostopic (Type: Information Command):
     rostopic list
     ```
 
-e. rosservice (Type: Information Command):
+e. `rosservice` (Type: Information Command):
 - Function: Gives information about ROS services.
 
 .. code-block:: bash
@@ -54,7 +54,7 @@ e. rosservice (Type: Information Command):
     rosservice list
     ```
 
-f. rosparam (Type: Configuration Command):
+f. `rosparam` (Type: Configuration Command):
 - Function: Manages parameters on the ROS parameter server.
 
 .. code-block:: bash
@@ -64,7 +64,7 @@ f. rosparam (Type: Configuration Command):
     rosparam set max_speed 5.0
     ```
 
-g. rosbag (Type: Data Recording and Playback Command):
+g. `rosbag` (Type: Data Recording and Playback Command):
 - Function: Records and plays back ROS topic data.
 
 .. code-block:: bash
