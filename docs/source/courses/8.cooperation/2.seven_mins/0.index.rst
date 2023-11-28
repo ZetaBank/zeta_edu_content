@@ -4,7 +4,6 @@
 Write complete code for each mission in 7 minutes
 
 Part 1. Easy
-
 -------------------
 
 1. Write a Python script that receives an integer as input from the user, calculates the square of that number, and outputs it.
@@ -16,7 +15,6 @@ Part 1. Easy
 4. There is a compound interest calculation that can be applied in real life. Assuming you invest at an interest rate of 10% per year, you can see how much your initial investment increases each year.
 
 Part 2. Intermediate
-
 -------------------
 
 5. Skydiving training with height restrictions Let's say a person is learning to skydive. This person practices diving using a simulator at a height of 100 meters. Skydiving simulators reduce the height by 3/5 times after each jump. If you practice in this way, you can write a program to calculate how high you fall on each jump.
@@ -46,7 +44,6 @@ Part 2. Intermediate
 +----------------------+------------------------+
 
 Part 3. Hard
-
 -------------------
 
 10. Online Theme Party Invitations
