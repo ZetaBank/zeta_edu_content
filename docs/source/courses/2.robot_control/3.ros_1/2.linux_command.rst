@@ -1,0 +1,177 @@
+Ubuntu Command Line
+================
+
+File and Directory Management
+----------------
+
+a. `ls` (Type: Display Command):
+- Function: Lists files and directories in the current directory.
+
+.. code-block:: bash
+
+    **Example**: Use the following command to list files and directories.
+    ```
+    ls
+    ```
+
+b. `cd` (Type: Navigation Command):
+- Function: Changes the current directory.
+
+.. code-block:: bash
+
+    **Example**: Move to a specific directory.
+    ```
+    cd /path/to/directory
+    ```
+
+c. `pwd` (Type: Display Command):
+- Function: Prints the full path of the current working directory.
+
+.. code-block:: bash
+
+    **Example**: Display the current working directory.
+    ```
+    pwd
+    ```
+
+d. `mkdir` (Type: Creation Command):
+- Function: Creates a new directory.
+
+.. code-block:: bash
+
+    **Example**: Create a new directory.
+    ```
+    mkdir new_directory
+    ```
+
+e. `rmdir` (Type: Deletion Command):
+- Function: Removes an empty directory.
+
+.. code-block:: bash
+
+    **Example**: Remove an empty directory.
+    ```
+    rmdir empty_directory
+    ```
+
+f. `rm` (Type: Deletion Command):
+- Function: Deletes a file or directory.
+
+.. code-block:: bash
+    
+    **Example**: Delete a file.
+    ```
+    rm file.txt
+    ```
+
+g. `cp` (Type: Copy Command):
+- Function: Copies files or directories.
+
+.. code-block:: bash
+
+    **Example**: Copy a file to a destination.
+    ```
+    cp file.txt /path/to/destination
+    ```
+
+h. `mv` (Type: Move Command):
+- Function: Moves files or directories.
+
+.. code-block:: bash
+
+    **Example**: Move a file to a destination.
+    ```
+    mv file.txt /path/to/destination
+    ```
+
+Text Editing
+----------------
+
+i. `nano` (Type: Text Editor Command):
+- Function: Opens the Nano text editor to edit a file.
+
+.. code-block:: bash
+
+    **Example**: Open Nano to edit a file.
+    ```
+    nano document.txt
+    ```
+
+j. `vi` (Type: Text Editor Command):
+- Function: Opens the Vim text editor to edit a file.
+
+.. code-block:: bash
+
+    **Example**: Open Vim to edit a file.
+    ```
+    vi document.txt
+    ```
+
+k. `gedit` (Type: Text Editor Command):
+- Function: Opens the Gedit text editor to edit a file.
+
+.. code-block:: bash
+
+    **Example**: Open Gedit to edit a file.
+    ```
+    gedit document.txt
+    ```
+
+System Information and Management
+----------------
+
+l. `echo` (Type: Display Command):
+- Function: Prints text to the terminal.
+
+.. code-block:: bash
+
+    **Example**: Print a message.
+    ```
+    echo "Hello, World!"
+    ```
+
+m. `cat` (Type: Display Command):
+- Function: Displays the contents of a file.
+
+.. code-block:: bash
+
+    **Example**: Display the contents of a file.
+    ```
+    cat file.txt
+    ```
+
+n. `apt-get` (Type: Package Management Command):
+- Function: Manages software packages on Debian-based systems.
+
+.. code-block:: bash
+
+    **Example**: Update package lists.
+    ```
+    sudo apt-get update
+    ```
+
+.. code-block:: 
+    
+    **Example**: Upgrade installed packages.
+    ```
+    sudo apt-get upgrade
+    ```
+
+.. code-block:: bash
+
+    **Example**: Install a new package.
+    ```
+    sudo apt-get install package_name
+    ```
+
+o. `top` (Type: System Monitoring Command):
+- Function: Displays real-time system information.
+
+.. code-block:: bash
+
+    **Example**: Display system information.
+    ```
+    top
+    ```
+
+- These examples provide detailed explanations and usage scenarios for each command. Adjust the command parameters as needed for your specific use case.

@@ -1,8 +1,8 @@
-ROS Command Line - Ⅱ
+ROS Command Line
 ================
 
 ROS Shell Command
-^^^^^^^^^^^^^^^^
+----------------
 
 a. roscore (Type: Launch Command):
 - Function: Starts the ROS master, which is the central coordination point for all ROS nodes in a system.
@@ -12,7 +12,6 @@ a. roscore (Type: Launch Command):
     **Example**: Open a terminal and run the following command to start the ROS master.
     ```
     roscore
-
     ```
 
 b. rosrun (Type: Launch Command):
@@ -76,7 +75,7 @@ g. rosbag (Type: Data Recording and Playback Command):
     ```
 
 ROS Execution Command
-^^^^^^^^^^^^^^^^
+----------------
 
 Type: Launch Command (e.g., rosrun, roslaunch)
 
@@ -103,7 +102,7 @@ Example: Let's say you have a launch file named robot_simulation.launch in the p
     roslaunch my_robot_pkg robot_simulation.launch
 
 ROS Information Command
-^^^^^^^^^^^^^^^^
+----------------
 
 Type: Information Command (e.g., rostopic, rosservice)
 

@@ -6,5 +6,6 @@ Here are the contents for this section:
 .. toctree:: 
 
     1.environment
-    2.env_setup
-    3.ros_commnad
+    2.linux_command
+    3.env_setup
+    4.ros_commnad

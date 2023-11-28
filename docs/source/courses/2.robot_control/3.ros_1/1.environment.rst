@@ -38,17 +38,17 @@ Key Features of ROS Melodic
 ----------------
 
 1. Multi-Language Support:
-   - ROS supports multiple programming languages, including C++, Python, and more.
-   - Developers can choose the language that best fits their application's requirements.
+    - ROS supports multiple programming languages, including C++, Python, and more.
+    - Developers can choose the language that best fits their application's requirements.
 
 2. Package System:
-   - ROS organizes software into packages, making it modular and easy to manage.
-   - A wide range of pre-built packages is available, simplifying the development process.
+    - ROS organizes software into packages, making it modular and easy to manage.
+    - A wide range of pre-built packages is available, simplifying the development process.
 
 3. Communication Middleware:
-   - ROS facilitates communication between different components of a robotic system through a middleware layer.
-   - This enables seamless integration of sensors, actuators, and other devices.
+    - ROS facilitates communication between different components of a robotic system through a middleware layer.
+    - This enables seamless integration of sensors, actuators, and other devices.
 
 4. Simulators and Visualization Tools:
-   - ROS provides tools like Gazebo for simulation, allowing developers to test their algorithms in a virtual environment.
-   - Visualization tools like Rviz aid in understanding the robot's state and sensor data.
+    - ROS provides tools like Gazebo for simulation, allowing developers to test their algorithms in a virtual environment.
+    - Visualization tools like Rviz aid in understanding the robot's state and sensor data.
