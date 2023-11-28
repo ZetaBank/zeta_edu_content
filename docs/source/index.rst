@@ -99,7 +99,7 @@ In Education Provided by ZetaBank:
     courses/2.robot_control/7.ros_4/0.index
     courses/2.robot_control/8.ros_5/0.index
     courses/line
-    courses/2.robot_control/8.team_quiz/0.index
+    courses/2.robot_control/9.team_quiz/0.index
 
 .. toctree:: 
     :caption: Robot Arm Control
@@ -174,7 +174,7 @@ In Education Provided by ZetaBank:
     courses/7.problem_solve/2.issue_analysis/0.index
     courses/7.problem_solve/3.issue_analysis/0.index
     courses/7.problem_solve/4.issue_analysis/0.index
-
+    courses/7.problem_solve/5.mid_test/0.index
 
 .. toctree::
     :caption: Cooperation
