@@ -1,4 +1,4 @@
-ROS C++ - Ⅰ
+ROS C++
 ================
 
 Comparing C and C++ Programming Rules

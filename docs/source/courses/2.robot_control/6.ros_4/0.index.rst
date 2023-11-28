@@ -1,8 +1,8 @@
-ROS C++ - Ⅱ
+ROS C++ Practice - Message
 ================
 
-ROS publisher and subscriber nodes using C++
-^^^^^^^^^^^^^^^^
+ROS Publisher and Subscriber Nodes Using C++
+----------------
 
 Step 1: Set Up Your ROS Workspace
 - Before you create nodes, make sure you have a ROS workspace set up. If you don't have one, you can create it using the following commands:
@@ -15,96 +15,142 @@ Step 1: Set Up Your ROS Workspace
 
 Step 2: Create a ROS Package
 
-- Inside the src directory of your ROS workspace, create a new ROS package. Replace my_cpp_package with your desired package name:
+- Inside the src directory of your ROS workspace, create a new ROS package. Replace ros_tutorials_topic with your desired package name:
 
     .. code-block:: bash
 
         cd ~/catkin_ws/src
-        catkin_create_pkg my_cpp_package roscpp std_msgs
+        catkin_create_pkg ros_tutorials_topic roscpp std_msgs
 
 Step 3: Create the Publisher Node
 
 - Navigate to your package directory:
     .. code-block:: bash
 
-        cd ~/catkin_ws/src/my_cpp_package
+        cd ~/catkin_ws/src/ros_tutorials_topic/src
 
-- Create a source file for the publisher node. For example, publisher_node.cpp:
+- Create a source file for the publisher node. For example, topic_publisher.cpp:
     .. code-block:: cpp
 
-        #include <ros/ros.h>
-        #include <std_msgs/String.h>
-
-        int main(int argc, char** argv) {
-            // Initialize ROS
-            ros::init(argc, argv, "publisher_node");
-
-            // Create a ROS node handle
-            ros::NodeHandle nh;
-
-            // Create a publisher for the "my_topic" topic
-            ros::Publisher pub = nh.advertise<std_msgs::String>("my_topic", 10);
-
-            // Set the publishing rate
-            ros::Rate rate(1);
-
-            // Main loop
-            while (ros::ok()) {
-                // Create a message
-                std_msgs::String msg;
-                msg.data = "Hello, ROS Publisher!";
-                
-                // Publish the message
-                pub.publish(msg);
-
-                // Sleep to maintain the publishing rate
-                rate.sleep();
-            }
-
-            return 0;
+        #include "ros/ros.h"                            // ROS Default Header File
+        #include "ros_tutorials_topic/MsgTutorial.h"    // MsgTutorial Message File Header. The header file is automatically created when building the package.
+        
+        int main(int argc, char **argv)                 // Node Main Function
+        {
+          ros::init(argc, argv, "topic_publisher");     // Initializes Node Name
+          ros::NodeHandle nh;                           // Node handle declaration for communication with ROS system
+        
+          // Declare publisher, create publisher 'ros_tutorial_pub' using the 'MsgTutorial'
+          // message file from the 'ros_tutorials_topic' package. The topic name is
+          // 'ros_tutorial_msg' and the size of the publisher queue is set to 100.
+          ros::Publisher ros_tutorial_pub = nh.advertise<ros_tutorials_topic::MsgTutorial>("ros_tutorial_msg", 100);
+        
+          // Set the loop period. '10' refers to 10 Hz and the main loop repeats at 0.1 second intervals
+          ros::Rate loop_rate(10);
+        
+          ros_tutorials_topic::MsgTutorial msg;     // Declares message 'msg' in 'MsgTutorial' message file format
+          int count = 0;                            // Variable to be used in message
+        
+          while (ros::ok())
+          {
+            msg.stamp = ros::Time::now();           // Save current time in the stamp of 'msg'
+            msg.data  = count;                      // Save the the 'count' value in the data of 'msg'
+        
+            ROS_INFO("send msg = %d", msg.stamp.sec);   // Prints the 'stamp.sec' message
+            ROS_INFO("send msg = %d", msg.stamp.nsec);  // Prints the 'stamp.nsec' message
+            ROS_INFO("send msg = %d", msg.data);        // Prints the 'data' message
+        
+            ros_tutorial_pub.publish(msg);          // Publishes 'msg' message
+        
+            loop_rate.sleep();                      // Goes to sleep according to the loop rate defined above.
+        
+            ++count;                                // Increase count variable by one
+          }
+        
+          return 0;
         }
 
 Step 4: Create the Subscriber Node
 
-- Create another source file for the subscriber node. For example, subscriber_node.cpp:
+- Create another source file for the subscriber node. For example, topic_subscriber.cpp:
     .. code-block:: cpp
 
-        #include <ros/ros.h>
-        #include <std_msgs/String.h>
+        #include "ros/ros.h"                          // ROS Default Header File
+        #include "ros_tutorials_topic/MsgTutorial.h"  // MsgTutorial Message File Header. The header file is automatically created when building the package.
 
-        // Callback function to process incoming messages
-        void messageCallback(const std_msgs::String::ConstPtr& msg) {
-            ROS_INFO("Received: %s", msg->data.c_str());
+        // Message callback function. This function is called when a message is received on the topic
+        // named 'ros_tutorial_msg'. It takes a 'MsgTutorial' message from the 'ros_tutorials_topic' package as input.
+        void msgCallback(const ros_tutorials_topic::MsgTutorial::ConstPtr& msg)
+        {
+          ROS_INFO("Received msg = %d", msg->stamp.sec);   // Print the 'stamp.sec' message
+          ROS_INFO("Received msg = %d", msg->stamp.nsec);  // Print the 'stamp.nsec' message
+          ROS_INFO("Received msg = %d", msg->data);        // Print the 'data' message
         }
 
-        int main(int argc, char** argv) {
-            // Initialize ROS
-            ros::init(argc, argv, "subscriber_node");
+        int main(int argc, char **argv)                         // Node Main Function
+        {
+          ros::init(argc, argv, "topic_subscriber");            // Initialize the node with the name "topic_subscriber"
 
-            // Create a ROS node handle
-            ros::NodeHandle nh;
+          ros::NodeHandle nh;                                   // Node handle declaration for communication with the ROS system
 
-            // Create a subscriber for the "my_topic" topic with the callback function
-            ros::Subscriber sub = nh.subscribe("my_topic", 10, messageCallback);
+          // Declare a subscriber named 'ros_tutorial_sub' using the 'MsgTutorial'
+          // message format from the 'ros_tutorials_topic' package. The topic name is
+          // 'ros_tutorial_msg', and the size of the subscriber queue is set to 100.
+          ros::Subscriber ros_tutorial_sub = nh.subscribe("ros_tutorial_msg", 100, msgCallback);
 
-            // Spin to receive messages
-            ros::spin();
+          // A function that enters a loop, waits for messages to be received,
+          // and executes the callback function when a message is received.
+          ros::spin();
 
-            return 0;
+          return 0;
         }
 
 Step 5: Update CMakeLists.txt
 
-- Open the CMakeLists.txt file in your package directory and add the following lines to configure the build for both the publisher and subscriber nodes:
+- Make the `CMakeLists.txt` file in your package directory (`ros_tutorials_topic`) and add the following lines to configure the build for both the publisher and subscriber nodes:
 
     .. code-block:: cmake
 
-        add_executable(publisher_node src/publisher_node.cpp)
-        target_link_libraries(publisher_node ${catkin_LIBRARIES})
+        cmake_minimum_required(VERSION 2.8.3)
+        project(ros_tutorials_topic)
 
-        add_executable(subscriber_node src/subscriber_node.cpp)
-        target_link_libraries(subscriber_node ${catkin_LIBRARIES})
+        find_package(catkin REQUIRED COMPONENTS roscpp std_msgs)
 
+        catkin_package(
+          LIBRARIES ros_tutorials_topic
+          CATKIN_DEPENDS std_msgs roscpp
+        )
+
+        include_directories(${catkin_INCLUDE_DIRS})
+
+        add_executable(topic_publisher src/topic_publisher.cpp)
+        add_dependencies(topic_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+        target_link_libraries(topic_publisher ${catkin_LIBRARIES})
+
+        add_executable(topic_subscriber src/topic_subscriber.cpp)
+        add_dependencies(topic_subscriber ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+        target_link_libraries(topic_subscriber ${catkin_LIBRARIES})
+
+
+Step 6: Create the launch File
+
+- Create a `union.launch` file for the publisher nodes.
+
+    .. code-block:: bash
+
+        mkdir -p ~/catkin_ws/src/launch
+
+        cd ~/catkin_ws/src/launch
+
+        touch union.launch
+
+    .. code-block:: XML
+
+        <launch>
+          <node pkg="ros_tutorials_topic" type="topic_publisher" name="topic_publisher"/>
+          <node pkg="ros_tutorials_topic" type="topic_subscriber" name="topic_subscriber"/>
+        </launch>
+        
 Step 6: Build and Run
 
 - Build your package using catkin_make:
@@ -126,12 +172,19 @@ Step 6: Build and Run
 
         .. code-block:: 
             
-            rosrun my_cpp_package publisher_node
+            rosrun ros_tutorials_topic topic_publisher
 
     - Terminal 2 (for the subscriber node):
 
         .. code-block:: bash
 
-            rosrun my_cpp_package subscriber_node
+            rosrun ros_tutorials_topic topic_subscriber
+
+    - Or, you can run the publisher and subscriber at once using a launch file.
+
+        .. code-block:: bash
+
+            roslaunch ros_tutorials_topic union.launch
+
 
 - You should see the subscriber printing the messages published by the publisher.
