@@ -1,6 +1,8 @@
 How to Install GCC / G++ Compiler
 ======================
 
+* This process is only required on Windows operating systems. In most Linux environments, GCC and G++ compilers are installed by default.
+
 .. thumbnail:: /_images/cpp_install/cpp1.png
 
 1. Go to the MinGW-W64 download page.
