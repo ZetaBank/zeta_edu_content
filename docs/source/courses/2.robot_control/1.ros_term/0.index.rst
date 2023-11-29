@@ -25,16 +25,16 @@ Message
 Topic
 -------------
 
-1. *Publisher:*
+1. *Publisher*:
    - Publishes information continuously, irrespective of whether a request is made.
    - Analogous to a YouTube streamer who broadcasts content regardless of viewership.
 
-2. *Subscriber:*
+2. *Subscriber*:
    - Subscribes to specific content of interest.
    - Similar to a YouTube subscriber who watches content they find interesting.
    - The publisher continuously sends content (topic), and subscribers receive it if interested.
 
-3. *Topic:*
+3. *Topic*:
    - Represents the subject or content on YouTube.
    - Establishes a connection between publishers and subscribers.
    - It's a matter of mutual interest and enables one-way communication from the publisher to the subscriber.
@@ -42,30 +42,30 @@ Topic
 Service
 -------------
 
-1. *Service Client:*
+1. *Service Client*:
    - Requests a specific service from the service server.
    - Receives a response related to the service from the server.
 
-2. *Service Server:*
+2. *Service Server*:
    - Responds only when a service request is made from a client.
    - Immediately responds with content related to the request.
 
-3. *Service:*
+3. *Service*:
    - Connects the server and client, representing any requested service.
    - Involves two-way communication, consisting of a request and a response.
 
 Action
 -------------
 
-1. *Action Client:*
+1. *Action Client*:
    - Delivers actions (executions) to the server.
    - Involves a process where the client receives intermediate results and, finally, the complete result after a longer response time.
 
-2. *Action Server:*
+2. *Action Server*:
    - Receives actions from the client and takes corresponding actions.
    - Provides interim reports and delivers the final result to the client.
 
-3. *Action:*
+3. *Action*:
    - Serves as a link between the action client and server.
    - Represents the task that the server must perform when delivered by the client, typically a time-consuming task.
    - Like a service, it involves two-way communication.
