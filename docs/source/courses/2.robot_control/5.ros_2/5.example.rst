@@ -22,7 +22,7 @@ Hello World
 - The main function is the entry point of the program, and it prints "Hello, World!" to the console using std::cout and then returns 0 to indicate successful execution.
 
 
-Variables and Input/Output.
+Variables and Input/Output
 ----------------------
 
 - Create a in_out.cpp file.

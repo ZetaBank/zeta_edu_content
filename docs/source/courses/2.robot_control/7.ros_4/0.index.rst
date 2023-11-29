@@ -137,7 +137,7 @@ Step 5: Update CMakeLists.txt
 
 Step 6: Create the launch File
 
-- Create a `union_msg.launch` file for nodes.
+- Create a `union_msg.launch` file for nodes:
 
     .. code-block:: bash
 
