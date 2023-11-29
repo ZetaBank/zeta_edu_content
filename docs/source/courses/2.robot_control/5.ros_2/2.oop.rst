@@ -1,0 +1,210 @@
+Object-Oriented Programming
+================
+
+Object
+----------------
+1. In the realm of object-oriented programming, an object stands as a cornerstone—a representation of a real-world entity or concept within a program.
+2. Objects encapsulate both data and behavior, fostering a holistic approach to program design.
+
+Procedural vs. Object-Oriented Programming
+----------------
+1. Procedural Programming
+    - Procedural programming is characterized by organizing code as procedures or routines executed sequentially.
+    - Emphasis lies on procedures manipulating data, often relying on function calls and global data for communication between functions.
+
+2. Object-Oriented Programming (OOP)
+----------------
+    - OOP takes a different approach by organizing code around objects, encapsulating both data and behavior within these objects.
+    - The paradigm encourages the modeling of real-world entities using classes and objects, emphasizing encapsulation, inheritance, and polymorphism for improved code organization and reuse.
+
+Class and Object
+----------------
+1. Class
+    - Think of a class as a blueprint or template, defining the properties (attributes) and behaviors (methods) common to all instances of the class.
+    - Classes serve as user-defined data types, providing the groundwork for creating multiple objects of the same type.
+
+2. Object
+    - An object, on the other hand, is an instance of a class, instantiated based on the class's blueprint.
+    - Each object represents a specific entity, possessing its set of attributes and behaviors.
+    - The beauty of OOP lies in the ability to create multiple objects from the same class, each maintaining its unique state and behavior.
+
+Relationship Between Class, Object, and Instance
+----------------
+1. To understand the dynamics:
+    - A class is the blueprint, outlining structure and behavior.
+    - Objects are instances of these classes, materialized from the blueprint.
+    - Instances refer to specific occurrences of objects, each maintaining its identity within the program.
+
+Why Use Classes
+----------------
+1. Encapsulation
+    - Classes embody encapsulation—bundling data and behaviors together, fostering modularity and organized code.
+    - This encapsulation shields internal details, exposing only what is necessary for external interactions.
+
+2. Inheritance
+    - Inheritance, a key feature of classes, enables the creation of new classes based on existing ones.
+    - This facilitates code reuse and the establishment of a hierarchy of related classes, streamlining development.
+
+3. Polymorphism
+    - Polymorphism empowers objects of different classes to be treated as objects of a common base class.
+    - This flexibility enhances adaptability and extensibility in the code, allowing for dynamic behavior.
+
+4. Code Reusability
+    - Classes contribute to code reusability, providing a framework for creating reusable code modules.
+    - Objects, instantiated from existing classes, reduce redundancy and enhance efficiency in development.
+
+Procedure-Oriented Programming Example - Python
+----------------
+
+.. code-block:: python
+
+    # Procedural Programming Example in Python
+
+    # Function to calculate the area of a rectangle
+    def calculate_rectangle_area(length, width):
+        return length * width
+
+    # Function to calculate the perimeter of a rectangle
+    def calculate_rectangle_perimeter(length, width):
+        return 2 * (length + width)
+
+    # Main program
+    if __name__ == "__main__":
+        # Input
+        rect_length = float(input("Enter the length of the rectangle: "))
+        rect_width = float(input("Enter the width of the rectangle: "))
+
+        # Calculate and display area
+        area = calculate_rectangle_area(rect_length, rect_width)
+        print(f"Area of the rectangle: {area}")
+
+        # Calculate and display perimeter
+        perimeter = calculate_rectangle_perimeter(rect_length, rect_width)
+        print(f"Perimeter of the rectangle: {perimeter}")
+
+
+Procedure-Oriented Programming Example - C++
+----------------
+
+.. code-block:: cpp
+
+    // Procedural Programming Example in C++
+
+    #include <iostream>
+
+    // Function to calculate the area of a rectangle
+    double calculateRectangleArea(double length, double width) {
+        return length * width;
+    }
+
+    // Function to calculate the perimeter of a rectangle
+    double calculateRectanglePerimeter(double length, double width) {
+        return 2 * (length + width);
+    }
+
+    int main() {
+        // Input
+        double rectLength, rectWidth;
+        std::cout << "Enter the length of the rectangle: ";
+        std::cin >> rectLength;
+        std::cout << "Enter the width of the rectangle: ";
+        std::cin >> rectWidth;
+
+        // Calculate and display area
+        double area = calculateRectangleArea(rectLength, rectWidth);
+        std::cout << "Area of the rectangle: " << area << std::endl;
+
+        // Calculate and display perimeter
+        double perimeter = calculateRectanglePerimeter(rectLength, rectWidth);
+        std::cout << "Perimeter of the rectangle: " << perimeter << std::endl;
+
+        return 0;
+    }
+
+
+Object-Oriented Programming Example - Python
+
+----------------
+
+.. code-block:: python
+
+    # Object-Oriented Programming Example in Python
+
+    # Rectangle class definition
+    class Rectangle:
+        def __init__(self, length, width):
+            self.length = length
+            self.width = width
+
+        def calculate_area(self):
+            return self.length * self.width
+
+        def calculate_perimeter(self):
+            return 2 * (self.length + self.width)
+
+    # Main program
+    if __name__ == "__main__":
+        # Input
+        rect_length = float(input("Enter the length of the rectangle: "))
+        rect_width = float(input("Enter the width of the rectangle: "))
+
+        # Create an instance of the Rectangle class
+        rectangle_object = Rectangle(rect_length, rect_width)
+
+        # Calculate and display area using object-oriented approach
+        area = rectangle_object.calculate_area()
+        print(f"Area of the rectangle: {area}")
+
+        # Calculate and display perimeter using object-oriented approach
+        perimeter = rectangle_object.calculate_perimeter()
+        print(f"Perimeter of the rectangle: {perimeter}")
+
+
+Object-Oriented Programming Example - C++
+----------------
+
+.. code-block:: cpp
+
+    // Object-Oriented Programming Example in C++
+
+    #include <iostream>
+
+    // Rectangle class definition
+    class Rectangle {
+    private:
+        double length;
+        double width;
+
+    public:
+        Rectangle(double len, double wid) : length(len), width(wid) {}
+
+        double calculateArea() {
+            return length * width;
+        }
+
+        double calculatePerimeter() {
+            return 2 * (length + width);
+        }
+    };
+
+    int main() {
+        // Input
+        double rectLength, rectWidth;
+        std::cout << "Enter the length of the rectangle: ";
+        std::cin >> rectLength;
+        std::cout << "Enter the width of the rectangle: ";
+        std::cin >> rectWidth;
+
+        // Create an instance of the Rectangle class
+        Rectangle rectangleObject(rectLength, rectWidth);
+
+        // Calculate and display area using object-oriented approach
+        double area = rectangleObject.calculateArea();
+        std::cout << "Area of the rectangle: " << area << std::endl;
+
+        // Calculate and display perimeter using object-oriented approach
+        double perimeter = rectangleObject.calculatePerimeter();
+        std::cout << "Perimeter of the rectangle: " << perimeter << std::endl;
+
+        return 0;
+    }

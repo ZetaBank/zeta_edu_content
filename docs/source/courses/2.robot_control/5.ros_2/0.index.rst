@@ -7,6 +7,7 @@ Here are the contents for this section:
 .. toctree:: 
 
     1.features
-    2.installation_1
-    3.installation_2
-    4.example
+    2.oop
+    3.installation_1
+    4.installation_2
+    5.example
