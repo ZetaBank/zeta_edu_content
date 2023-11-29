@@ -123,7 +123,7 @@ Parameter
 
 - Parameters can be considered the same as a service as they run a parameter-related parameter server on each node and change parameters through communication between external parameter clients.
 
-- However, the purpose can be seen as different in that parameters within the node or global parameters can be easily set or changed inside or outside the node using the service message communication method, and can be easily retrieved and used. .
+- However, the purpose can be seen as different in that parameters within the node or global parameters can be easily set or changed inside or outside the node using the service message communication method, and can be easily retrieved and used.
 
 - Define parameters to be set in Parameter Server.
 
@@ -144,3 +144,4 @@ Parameter
     4. The Param API allows you to interact with the ROS parameter server at the programming language level. It is used to import or set the parameter value of the node's execution logic.
 
 .. thumbnail:: /_images/robot_control/ros_parameter_1.png
+

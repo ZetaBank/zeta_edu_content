@@ -74,84 +74,241 @@ g. `rosbag` (Type: Data Recording and Playback Command):
     rosbag record -O data.bag /topic1 /topic2
     ```
 
-ROS Execution Command
-----------------
-
-Type: Launch Command (e.g., rosrun, roslaunch)
-
-Function: Execution commands are used to start and run ROS nodes and launch files. These commands initiate the execution of software components that perform specific tasks within a robotic system.
-
-rosrun:
-
-Function: Runs a specific node from a ROS package.
-
-Example: Suppose you have a package named my_robot_pkg containing a node named controller_node. To run the controller node, use the following command:
+h. `roscd` (Type: File and Directory Navigation Command):
+- Function: Changes the current working directory to the package or stack directory of a specified ROS package or stack.
 
 .. code-block:: bash
 
-    rosrun my_robot_pkg controller_node
+    **Example**: Change the working directory to the 'my_robot_pkg' package
+    ```
+    roscd my_robot_pkg
+    ```
 
-roslaunch:
-
-Function: Launches complex ROS systems composed of multiple nodes and configuration files.
-
-Example: Let's say you have a launch file named robot_simulation.launch in the package my_robot_pkg, which launches a simulation environment along with multiple nodes. Use the following command:
+i. `rosls` (Type: File Listing Command):
+- Function: Lists the contents of a ROS package or stack.
 
 .. code-block:: bash
 
-    roslaunch my_robot_pkg robot_simulation.launch
+    **Example**: List the contents of the 'my_robot_pkg' package
+    ```
+    rosls my_robot_pkg
+    ```
 
-ROS Information Command
-----------------
+j. `rosed` (Type: File Editing Command):
+- Function: Edits a file within a ROS package using the user's default editor.
 
-Type: Information Command (e.g., rostopic, rosservice)
+.. code-block:: bash
 
-Function: Information commands provide insights into different aspects of the ROS system, such as topics, services, and parameters. They allow users to examine and interact with the runtime behavior and configuration of ROS nodes.
+    **Example**: Edit the 'config.yaml' file in the 'my_robot_pkg' package
+    ```
+    rosed my_robot_pkg config.yaml
+    ```
 
-rostopic:
+k. `roscp` (Type: File Copying Command):
+- Function: Copies files from a ROS package or stack to a specified destination.
 
-Function: Provides information about ROS topics, including listing available topics, publishing messages to topics, and subscribing to topics to view messages.
+.. code-block:: bash
 
-Examples:
+    **Example**: Copy 'config.yaml' from 'my_robot_pkg' to the '/path/to/destination' directory
+    ```
+    roscp my_robot_pkg config.yaml /path/to/destination
+    ```
 
-To list all available topics:
+l. `rospd` (Type: Stack and Package Directory Navigation Command):
+- Function: Changes the current working directory to the directory containing a specified ROS package or stack.
+
+.. code-block:: bash
+
+    **Example**: Change the working directory to the directory containing 'my_robot_pkg'
+    ```
+    rospd my_robot_pkg
+    ```
+
+m. `rosd` (Type: Directory Stack Navigation Command):
+- Function: Changes the current working directory to the top of the ROS directory stack.
+
+.. code-block:: bash
+
+    **Example**: Change the working directory to the top of the ROS directory stack
+    ```
+    rosd
+    ```
+
+n. `rosclean` (Type: Cleanup Command):
+- Function: Cleans up various ROS-related directories, logs, and temporary files.
+
+.. code-block:: bash
+
+    **Example**: Clean up ROS-related directories and logs
+    ```
+    rosclean
+    ```
+
+o. `rosnode` (Type: Node Information Command):
+- Function: Provides information about ROS nodes, including listing active nodes and getting information about a specific node.
 
 .. code-block:: bash
     
-    rostopic list
+    **Example**: To list all active nodes in the ROS system
+    ```
+    rosnode list
+    ```
 
-To publish a message to a topic named /robot_status:
+p. `rosmsg` (Type: Message Inspection Command):
+- Function: Provides information about ROS message types.
+
+.. code-block:: bash
+    
+    **Example**: To display the fields of a specific message type (e.g., std_msgs/String)
+    ```
+    rosmsg show std_msgs/String
+    ```
+
+q. `rossrv` (Type: Service Inspection Command):
+- Function: Provides information about ROS service types.
+
+.. code-block:: bash
+    
+    **Example**: To display the request and response message types of a specific service type
+    ```
+    rossrv show my_robot_pkg/MoveService
+    ```
+
+r. `rosversion` (Type: ROS Version Command):
+- Function: Prints the installed version of ROS.
+
+.. code-block:: bash
+    
+    **Example**: To display the installed ROS version
+    ```
+    rosversion
+    ```
+
+s. `roswtf` (Type: ROS "What the F***" Command):
+- Function: Checks the ROS system for potential issues and provides diagnostic information.
+
+.. code-block:: bash
+    
+    **Example**: To check the ROS system for potential issues
+    ```
+    roswtf
+    ```
+
+t. `rospack` (Type: Package Information Command):
+- Function: Provides information about ROS packages.
+
+.. code-block:: bash
+    
+    **Example**: To display the package path of a specific package (e.g., my_robot_pkg)
+    ```
+    rospack find my_robot_pkg
+    ```
+
+u. `rosinstall` (Type: Installation Command):
+- Function: Installs ROS packages and their dependencies from a ROS installation source.
+
+.. code-block:: bash
+    
+    **Example**: To install a specific ROS package (e.g., navigation)
+    ```
+    rosinstall ~/ros_workspace https://github.com/ros-planning/navigation.git
+    ```
+
+v. `rosdep` (Type: Dependency Management Command):
+- Function: Installs system dependencies required by ROS packages.
+
+.. code-block:: bash
+    
+    **Example**: To install system dependencies for a specific ROS package (e.g., my_robot_pkg)
+    ```
+    rosdep install --from-paths src --ignore-src -r -y
+    ```
+
+w. `roslocate` (Type: Package Location Command):
+- Function: Locates ROS packages and provides information about their source repositories.
+
+.. code-block:: bash
+    
+    **Example**: To locate the source repository of a specific ROS package (e.g., geometry_msgs)
+    ```
+    roslocate info geometry_msgs
+    ```
+
+x. `roscreate-pkg` (Type: Package Creation Command):
+- Function: Creates a new ROS package with the specified dependencies and directory structure.
+
+.. code-block:: bash
+    
+    **Example**: To create a new ROS package named my_new_pkg with dependencies on rospy and std_msgs
+    ```
+    roscreate-pkg my_new_pkg rospy std_msgs
+    ```
+
+y. `rosmake` (Type: Package Building Command):
+- Function: Builds a ROS package.
+
+.. code-block:: bash
+    
+    **Example**: To build a specific ROS package (e.g., my_robot_pkg)
+    ```
+    rosmake my_robot_pkg
+    ```
+
+z. `catkin_create_pkg` (Type: Catkin Package Creation Command):
+- Function: Creates a new catkin-based ROS package.
+
+.. code-block:: bash
+    
+    **Example**: To create a new catkin-based ROS package named my_catkin_pkg with dependencies on rospy and std_msgs
+    ```
+    catkin_create_pkg my_catkin_pkg rospy std_msgs
+    ```
+
+aa. `catkin_make` (Type: Catkin Package Building Command):
+- Function: Builds catkin-based ROS packages.
 
 .. code-block:: bash
 
-    rostopic pub /robot_status std_msgs/String "data: 'operational'"
+    **Example**: To build catkin-based ROS packages in the current workspace
+    ```
+    catkin_make
+    ```
 
-To subscribe and view messages on a topic named /sensor_data:
+bb. `catkin_eclipse` (Type: Catkin Eclipse Integration Command):
+- Function: Integrates a catkin workspace with the Eclipse IDE.
+.. code-block:: bash
+    
+    **Example**: To generate Eclipse project files for a catkin workspace
+    ```
+    catkin_eclipse
+    ```
+
+cc. `catkin_prepare_release` (Type: Catkin Package Release Preparation Command):
+- Function: Prepares a catkin package for release by updating version numbers and generating changelogs.
 
 .. code-block:: bash
 
-    rostopic echo /sensor_data
+    **Example**: To prepare a catkin package named my_catkin_pkg for release
+    ```
+    catkin_prepare_release my_catkin_pkg
+    ```
 
-rosservice:
-
-Function: Provides information about ROS services, including listing available services, calling services with specific arguments, and viewing service definitions.
-
-Examples:
-
-To list all available services:
+dd. catkin_generate_changelog (Type: Catkin Changelog Generation Command):
+- Function: Generates a changelog for a catkin package based on commit history.
 
 .. code-block:: bash
 
-    rosservice list
+    **Example**: To generate a changelog for a catkin package named my_catkin_pkg
+    ```
+    catkin_generate_changelog my_catkin_pkg
+    ```
 
-To call a service named /reset_robot:
-
-.. code-block:: bash
-
-    rosservice call /reset_robot
-
-To view the details of a service named /move_robot:
+ee. catkin_init_workspace (Type: Catkin Workspace Initialization Command):
+- Function: Initializes a directory as a catkin workspace.
 
 .. code-block:: bash
+    **Example**: To initialize the current directory as a catkin workspace
+    ```
+    catkin_init_workspace
+    ```
 
-    rosservice info /move_robot
