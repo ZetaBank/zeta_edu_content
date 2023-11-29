@@ -276,6 +276,7 @@ aa. `catkin_make` (Type: Catkin Package Building Command):
 
 bb. `catkin_eclipse` (Type: Catkin Eclipse Integration Command):
 - Function: Integrates a catkin workspace with the Eclipse IDE.
+
 .. code-block:: bash
     
     **Example**: To generate Eclipse project files for a catkin workspace
