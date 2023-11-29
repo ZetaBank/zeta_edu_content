@@ -123,7 +123,6 @@ Procedure-Oriented Programming Example - C++
 
 
 Object-Oriented Programming Example - Python
-
 ----------------
 
 .. code-block:: python
