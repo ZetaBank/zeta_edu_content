@@ -45,15 +45,26 @@ Please refer to the specific instructions for each question and submit your repo
     1. Python and Quantum Computing: How is Python integrated with quantum computing for scientific and engineering applications, and what innovations are anticipated in machine learning and artificial intelligence?
     2. Robotics and Biomechanics: How are biomechanics principles applied to improve the motion capabilities and efficiency of robots in design and control?
     3. Future Prospects of Depth Camera Art in Entertainment: How does real-time interactive art through Depth Camera create unique interactions between artworks and audiences in the entertainment industry, and what are the future possibilities and innovations in this field?
+    4. Nanorobotics for Targeted Drug Delivery: How does nanotechnology enable the development of nanorobots for precise drug delivery in medical applications? Discuss the potential impact on personalized medicine.
+    5. AI-driven Avatars and Characters in VR: Explore the role of artificial intelligence in creating intelligent avatars and characters within virtual reality environments. Discuss advancements in natural language processing and behavior simulation.
+    6. Data Analytics for Crop Yield Prediction: Explore how data analytics, fueled by IoT data, is used to predict and optimize crop yields. Discuss the role of machine learning algorithms in forecasting.
+    7. AI-driven Marine Conservation: Discuss how AI technologies are applied in marine conservation efforts. Explore applications in tracking marine life, monitoring ocean health, and preventing overfishing.
+    8. Social Robots in Elderly Care: Explore the use of social robots in elderly care. Discuss how these robots provide companionship, assistance, and monitor the well-being of elderly individuals.
+    9. Sentiment Analysis in Stock Market Predictions: Discuss how sentiment analysis powered by AI is applied in predicting stock market trends. Explore how machine learning models analyze news articles, social media, and financial reports for market insights.
+    10. AI-driven Robo-Advisors for Investment Management: Explore the role of AI-driven robo-advisors in investment management. Discuss how these platforms use algorithms to make investment decisions based on user preferences and market conditions.
 
 <Advanced Test>: In teams, please submit a report of at least 5 chapters with diagrams for each of the following topics.
-
     1. Robot Hardware
         1. AI Robot DIY Kit Hardware Configuration: Divide the AI robot DIY kit into power, control, devices, and propulsion components and provide related explanations.
         2. Components of Intelligent Robots: Divide intelligent robots into motors, robot sensors, control systems, and communication systems, and describe each part.
         3. Describe two sensing and perception libraries used in ROS, providing insights into how they contribute to tasks such as SLAM, object detection, and sensor fusion.
         4. Break down the components of a modular robot design, emphasizing the advantages and challenges of modular robotics. Provide examples of how modularity enhances adaptability and reconfigurability.
-        5. 
+        5. How does power distribution influence the overall performance of robotic systems, and what key considerations should be taken into account?
+        6. Discuss the primary functions of motors in robotic systems and provide examples of different types of motors used in robotics.
+        7. How does the choice of materials impact the design and functionality of robotic components? Provide examples of materials suitable for different applications.
+        8. Provide an overview of robot control systems, detailing the role of controllers in regulating robot movements and actions.
+        9. Discuss the latest trends in robotic actuator technology and their implications for improved robotic performance.
+        10. Discuss the design considerations for robotic hardware intended for use in extreme environments, such as space exploration or deep-sea applications.
 
     2. Introduction to ROS
         1. Explain 5 out of 7 different functions related to robots, such as robot geometry library, robot description language, diagnostic system, sensing, and navigation.
@@ -77,6 +88,5 @@ Please refer to the specific instructions for each question and submit your repo
         7. Describe advanced ROS navigation commands for path planning and obstacle avoidance in dynamic environments. Provide code snippets demonstrating the application of these commands in realistic robotic scenarios.
         8. Explain advanced ROS commands for real-time sensor data processing. Provide code snippets demonstrating how these commands are used to filter, transform, or visualize sensor data in robotic applications.
         9. Explain advanced ROS commands for integrating with external libraries. Provide examples showcasing how these commands enhance robotic capabilities.
-        10. Elaborate on the implementation of ROS services and action servers for collaborative robotic tasks. Provide code examples illustrating their role in complex scenarios.
-
+        10. Describe advanced ROS navigation commands tailored for dynamic environments. Provide code snippets showcasing their application in realistic scenarios.
 
