@@ -25,19 +25,24 @@ Topic:
         2. Image Loading: How can you load an image using OpenCV, and what data structure is used to represent the image?
         3. Color Spaces: Explain the significance of converting an image to different color spaces in OpenCV.
         4. Video Processing: Discuss the steps involved in processing a video stream using OpenCV.
-        5. Scikit-Learn Basics: How do you split a dataset into training and testing sets using Scikit-Learn?
-        6. Event Handling: How does event handling work in PyQt, and how can you capture and respond to button clicks?
-        7. Custom Widgets: How can you create a custom widget in PyQt, and what are the benefits of doing so?
+        5. File Saving in OpenCV: How can you save an image or video file using OpenCV, and what are the common file formats supported?
+        6. Scikit-Learn Basics: How do you split a dataset into training and testing sets using Scikit-Learn?
+        7. Event Handling: How does event handling work in PyQt, and how can you capture and respond to button clicks?
+        8. Custom Widgets: How can you create a custom widget in PyQt, and what are the benefits of doing so?
+        9. Data Binding in PyQt: Explain the concept of data binding in PyQt, and how does it enhance the synchronization between the application's user interface and underlying data structures?
+        10. PyQt Styling: How can you apply stylesheets to PyQt widgets for customizing the look and feel of the application, and what considerations should be taken into account for a consistent design?
 
     2. Fusion Coding choice questions
         1. Array Indexing: How do you index a 2D Numpy array to access a specific element?
         2. Object Detection: What are Haar cascades, and how are they utilized for object detection in OpenCV?
-        3. Linear Regression: Explain the concept of linear regression, and how is it implemented in Scikit-Learn?
-        4. Support Vector Machines (SVM): What is the role of the kernel in SVM, and how does it affect decision boundaries?
-        5. Combining PyQt and Data Analysis: How can you integrate PyQt with data analysis tools to create interactive GUI applications?
-        6. PyQt Signals and Slots: What is the role of signals and slots in PyQt, and how do they enable communication between objects?
-        7. GUI Optimization in PyQt: How can you optimize the performance of a PyQt GUI application, especially when dealing with large datasets?
-
+        3. OpenCV Contour Detection: How is contour detection implemented in OpenCV, and what are its applications in image processing, such as object recognition or shape analysis?
+        4. Linear Regression: Explain the concept of linear regression, and how is it implemented in Scikit-Learn?
+        5. Support Vector Machines (SVM): What is the role of the kernel in SVM, and how does it affect decision boundaries?
+        6. Combining PyQt and Data Analysis: How can you integrate PyQt with data analysis tools to create interactive GUI applications?
+        7. PyQt Signals and Slots: What is the role of signals and slots in PyQt, and how do they enable communication between objects?
+        8. GUI Optimization in PyQt: How can you optimize the performance of a PyQt GUI application, especially when dealing with large datasets?
+        9. Data Visualization in PyQt: How can you integrate data visualization libraries, like Matplotlib or Plotly, into a PyQt application to create interactive plots and charts?
+        10. PyQt Threading: What are the challenges of implementing multithreading in a PyQt application, and how can it be utilized for background tasks or improving responsiveness?
 
 Evaluation Standard:
     1. Choose one Fusion Coding essential question and one Fusion Coding choice question to submit your report.

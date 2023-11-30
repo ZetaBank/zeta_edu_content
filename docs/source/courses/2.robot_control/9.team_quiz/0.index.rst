@@ -29,6 +29,8 @@ Topic:
         6. Emerging Technologies: What emerging technologies are influencing the evolution of ROS as a robot operating system?
         7. Collaborative Innovation: How do ROS and industrial robot manufacturers collaborate in innovating robotic technologies?
         8. Sensor Fusion: How does ROS contribute to sensor fusion in autonomous vehicles?
+        9. Security and Safety: What measures and protocols does ROS implement to address security and safety concerns in robotic systems, especially in applications with potential risks, such as medical robotics or hazardous environments?
+        10. Edge Computing in ROS: How does ROS adapt to or leverage edge computing paradigms, and what benefits and challenges does this integration pose in the context of resource-constrained robotic systems?
 
     2. ROS choice questions
         1. Quality Control: How can ROS be utilized for quality control processes in collaborative robot production?
@@ -39,6 +41,8 @@ Topic:
         6. Obstacle Avoidance: How does ROS enable robots to perform obstacle avoidance during navigation?
         7. ROSbag Usage: What is the purpose of ROSbag, and how is it used for data recording and playback?
         8. ROS Bridge: What is the role of the ROS Bridge in connecting ROS with other non-ROS systems?
+        9. ROS Middleware: What role does middleware play in the ROS architecture, and how does it contribute to communication between different components of a robotic system?
+        10. ROS Metrics and Performance Monitoring: What tools and metrics are available in ROS for monitoring the performance of robotic systems, and how can developers optimize their code and configurations based on these metrics?
 
 Evaluation Standard:
     1. Choose one ROS essential question and one ROS choice question to submit your report.

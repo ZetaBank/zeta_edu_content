@@ -28,6 +28,9 @@ Topic:
         5. Augmented Reality (AR): How does RealSense enhance the AR experience, and what features support AR applications?
         6. Calibration Accuracy: How does accurate calibration impact the performance of RealSense depth sensing applications?
         7. RealSense 3D Capture: How does RealSense enable high-quality 3D capture, and what are the potential use cases?
+        8. RealSense and Unity Integration: How can RealSense cameras be integrated into Unity for developing interactive and immersive applications, and what features does this integration offer?
+        9. RealSense for Facial Animation: How does RealSense contribute to real-time facial animation in virtual environments, and what are the key considerations for developers in implementing this feature?
+        10. RealSense in Automotive Applications: How is RealSense technology applied in the automotive industry, and what role does it play in features such as driver monitoring and advanced driver assistance systems (ADAS)?
 
     2. RealSense choice questions
         1. RealSense and ROS Integration: How can RealSense cameras be integrated with ROS for robotic applications?
@@ -37,6 +40,9 @@ Topic:
         5. RealSense for Drone Navigation: How is RealSense technology utilized in improving navigation for autonomous drones?
         6. RealSense Time of Flight (ToF): What is Time of Flight technology in RealSense, and how does it improve depth sensing?
         7. RealSense Training Programs: What training programs or certifications are available for developers interested in mastering RealSense technology?
+        8. Multi-Camera Calibration: Why is multi-camera calibration important in RealSense setups, and what tools or techniques are available to achieve accurate calibration across multiple cameras?
+        9. Cross-Platform Compatibility: How does RealSense ensure cross-platform compatibility, and what benefits does this offer to developers working on diverse hardware and software environments?
+        10. RealSense and Machine Learning: In what ways can machine learning be integrated with RealSense technology, and how does this combination open new possibilities for intelligent applications?
 
 Evaluation Standard:
     1. Choose one RealSense essential question and one RealSense choice question to submit your report.

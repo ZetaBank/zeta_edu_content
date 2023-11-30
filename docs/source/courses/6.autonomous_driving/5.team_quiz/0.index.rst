@@ -28,6 +28,9 @@ Topic:
         5. Radar Applications: How is radar utilized in autonomous driving, and what are its advantages in certain scenarios?
         6. Emergency Situations: How can decision-making algorithms handle unexpected or emergency situations on the road?
         7. Collision Avoidance Systems: How do collision avoidance systems work in autonomous vehicles?
+        8. V2X Communication: What is Vehicle-to-Everything (V2X) communication, and how does it enhance the capabilities and safety of autonomous vehicles?
+        9. Human-Machine Interaction: What role does human-machine interaction play in the design and deployment of autonomous driving systems, especially in the transition phases between manual and autonomous modes?
+        10. Road Infrastructure for Autonomy: How can road infrastructure be optimized or adapted to better support the deployment and functionality of autonomous driving systems?
 
     2. Autonomous Driving choice questions
         1. Obstacle Avoidance: How do decision-making algorithms handle obstacle avoidance in real-time?
@@ -37,6 +40,9 @@ Topic:
         5. Cybersecurity Concerns: What cybersecurity challenges are associated with autonomous driving, and how can they be addressed?
         6. Ethical Dilemmas: How do autonomous driving systems deal with ethical dilemmas on the road?
         7. Economic Opportunities: What economic opportunities are emerging as a result of advancements in autonomous driving technology?
+        8. LiDAR vs. Radar: Compare and contrast the strengths and weaknesses of LiDAR and radar technologies in the context of perception for autonomous vehicles.
+        9. Liability and Insurance: What legal and liability considerations arise in the event of accidents involving autonomous vehicles, and how can insurance models adapt to this evolving landscape?
+        10. Autonomous Ride-Sharing: What role does autonomous driving technology play in the future of ride-sharing services, and how might it reshape urban mobility?
 
 Evaluation Standard:
     1. Choose one Autonomous Driving essential question and one Autonomous Driving choice question to submit your report.
