@@ -4,37 +4,47 @@ ROS C++
 Comparing C and C++ Programming Rules
 ^^^^^^^^^^^^^^^^
 
-- C and C++ are related programming languages, with C++ being an extension of C. While they share many concepts and syntax elements, C++ introduces additional features and paradigms, such as object-oriented programming (OOP). Here are some key differences:
+- C and C++ are related programming languages, with C++ being an extension of C.
 
-Object-Oriented Programming (OOP):
+- While they share many concepts and syntax elements, C++ introduces additional features and paradigms, such as object-oriented programming (OOP).
 
-    C++ supports OOP with features like classes, objects, inheritance, and polymorphism, allowing for more organized and modular code.
-    C does not directly support OOP; it relies on procedural programming.
+- Here are some key differences:
 
-Classes and Objects:
+1. Object-Oriented Programming (OOP):
 
-    C++ allows the creation of classes to encapsulate data and methods into objects.
-    C does not have classes or built-in support for objects.
+    - C++ supports OOP with features like classes, objects, inheritance, and polymorphism, allowing for more organized and modular code.
 
-Standard Template Library (STL):
+    - C does not directly support OOP; it relies on procedural programming.
 
-    C++ provides the STL, which includes ready-to-use containers (like vectors, maps, and queues) and algorithms.
-    C does not have a built-in STL.
+2. Classes and Objects:
 
-Namespaces:
+    - C++ allows the creation of classes to encapsulate data and methods into objects.
 
-    C++ has namespaces to avoid naming conflicts and provide better organization of code.
-    C does not have namespaces.
+    - C does not have classes or built-in support for objects.
 
-Function Overloading:
+3. Standard Template Library (STL):
 
-    C++ supports function overloading, which allows multiple functions with the same name but different parameter lists.
-    C does not support function overloading.
+    - C++ provides the STL, which includes ready-to-use containers (like vectors, maps, and queues) and algorithms.
+    
+    - C does not have a built-in STL.
 
-Type Safety:
+4. Namespaces:
 
-    C++ offers stronger type safety through features like the static_cast operator and type-safe template classes.
-    C has fewer type safety features.
+    - C++ has namespaces to avoid naming conflicts and provide better organization of code.
+
+    - C does not have namespaces.
+
+5. Function Overloading:
+
+    - C++ supports function overloading, which allows multiple functions with the same name but different parameter lists.
+
+    - C does not support function overloading.
+
+6. Type Safety:
+
+    - C++ offers stronger type safety through features like the static_cast operator and type-safe template classes.
+    
+    - C has fewer type safety features.
 
 Creating a ROS C++ Package
 ^^^^^^^^^^^^^^^^
