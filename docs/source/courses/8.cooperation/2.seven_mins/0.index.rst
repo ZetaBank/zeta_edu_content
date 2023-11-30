@@ -47,7 +47,8 @@ Part 3. Hard
 -------------------
 
 10. Online Theme Party Invitations
-Let's imagine. Due to COVID-19, all gatherings and parties are being held online. Let's say you're hosting a "generational themed party" that can involve people from multiple generations. When participants enter the year they were born, it tells them which generation they belong to and recommends music, movies, and fashion styles representative of that generation.
+
+    - Let's imagine. Due to COVID-19, all gatherings and parties are being held online. Let's say you're hosting a "generational themed party" that can involve people from multiple generations. When participants enter the year they were born, it tells them which generation they belong to and recommends music, movies, and fashion styles representative of that generation.
 
 11. When expressing length, volume, weight or amount, 1000 is often written as ‘k’. For example, 3000m is usually written as 3km. Next, if the input number is greater than 1000, write a code that omits the numbers from digits 1 to 100 and adds ‘k’.
 
@@ -58,10 +59,13 @@ Let's imagine. Due to COVID-19, all gatherings and parties are being held online
 .. thumbnail:: /_images/nwjns/ETA.png
 
 14. Characteristics and implications of each generation through famous scenes of Korean history
-We will create a program that informs the characteristics of each generation according to Korean history and culture. When a user enters the year they were born, write code that tells you what historical events or culture occurred in that generation and what implications they have for the present.
+
+    - We will create a program that informs the characteristics of each generation according to Korean history and culture. When a user enters the year they were born, write code that tells you what historical events or culture occurred in that generation and what implications they have for the present.
 
 15. Automatic chemical monitoring system
-This program automatically monitors temperatures as chemists prepare wound care medications. It measures the temperature every 15 seconds and sends a notification if the temperature is too high or too low.
+
+    - This program automatically monitors temperatures as chemists prepare wound care medications. It measures the temperature every 15 seconds and sends a notification if the temperature is too high or too low.
 
 16. Smart flowerpot management system
-This program automatically monitors the moisture status of indoor plants. Every 15 seconds, a moisture sensor measures the moisture status of the pot and sends a notification to automatically water as needed.
+
+    - This program automatically monitors the moisture status of indoor plants. Every 15 seconds, a moisture sensor measures the moisture status of the pot and sends a notification to automatically water as needed.
