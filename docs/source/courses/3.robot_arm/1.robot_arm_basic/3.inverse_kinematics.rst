@@ -49,4 +49,4 @@ Inverse kinematics
 
         - Motion Planning: It is essential for planning collision-free trajectories for robots in complex environments.
 
-    - In summary, inverse kinematics is a critical concept in robotics that addresses the challenging problem of finding the joint configurations required to achieve a desired end effector pose. It relies on analytical or numerical methods and plays a pivotal role in various robotic applications where precise control and motion planning are essential.
+- In summary, inverse kinematics is a critical concept in robotics that addresses the challenging problem of finding the joint configurations required to achieve a desired end effector pose. It relies on analytical or numerical methods and plays a pivotal role in various robotic applications where precise control and motion planning are essential.
